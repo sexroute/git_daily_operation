@@ -40,4 +40,4 @@ git checkout -b origin/release/caigou_v1.0
 git branch -vv
  
 ### 2.4 push local branch to remote branch and track
-git push -u origin release/caigou_v1.0
+git push -u origin/release/caigou_v1.0
