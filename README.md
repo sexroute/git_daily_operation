@@ -54,8 +54,8 @@ Warning : no large blobs matching criteria found in packfiles - does the repo ne
 进入<第二部克隆出来的路径> 执行 
 git gc
 然后再执行 java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <第二部克隆出来的路径>  
-e.执行 git push
-如果提示bare相关的消息，则对本地的源库执行允许非bare的提交，再执行push
+e.执行 git push  
+如果提示bare相关的消息，则对本地的源库执行允许非bare的提交，再执行push  
 f.如果是本地库，则需要恢复本地库的bare禁止提交模式
 
 ### 3.2 安装 git lfs
