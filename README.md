@@ -2,12 +2,12 @@
 ## 1.0 Init repositories operation
 
 ### 1.1 or create a new repository on the command line
-echo "# git_daily_operation" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/sexroute/git_daily_operation.git
-git push -u origin master
+echo "# git_daily_operation" >> README.md  
+git init  
+git add README.md  
+git commit -m "first commit"  
+git remote add origin https://github.com/sexroute/git_daily_operation.git  
+git push -u origin master  
 
 ### 1.2 or push an existing repository from the command line
 git remote add origin https://github.com/sexroute/git_daily_operation.git
@@ -25,13 +25,13 @@ git remote -v
 ## 2.0 branch opertiaon  
   
 ### 2.1 display all local and remote branches
-git branch -a
+git branch -a  
 
-dev
-master
-remotes/origin/HEAD -> origin/master
-remotes/origin/master
-remotes/origin/release/caigou_v1.0
+dev  
+master  
+remotes/origin/HEAD -> origin/master  
+remotes/origin/master  
+remotes/origin/release/caigou_v1.0  
  
 ### 2.2 checkout remote branch
 git checkout -b origin/release/caigou_v1.0     
