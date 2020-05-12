@@ -32,9 +32,11 @@ master
 remotes/origin/HEAD -> origin/master  
 remotes/origin/master  
 remotes/origin/release/caigou_v1.0  
- 
+
+### 2.1.1 git fetch all branch data
+git fetch  
 ### 2.2 checkout remote branch
-git checkout -b origin/release/caigou_v1.0     
+git checkout -b caigou_v1.0 origin/release/caigou_v1.0     
  
 ### 2.3 display local branch and tracking remote branch
 git branch -vv
