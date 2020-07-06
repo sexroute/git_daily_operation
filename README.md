@@ -65,12 +65,12 @@ f.如果是本地库，则需要恢复本地库的bare禁止提交模式
 git config --bool core.bare false 
 ### 3.2 安装 git lfs
 git lfs install  
-git lfs track "*.psd"  	
-git lfs track "*.doc"  	
-git lfs track "*.docx"  	
-git lfs track "*.xls"  	
-git lfs track "*.pdf"  	
-git lfs track "*.xlsx"  	
-git add .gitattributes  	
-git commit -m "lfs" -a  	
-git push  	
+git lfs track "*.psd"  
+git lfs track "*.doc"  
+git lfs track "*.docx"  
+git lfs track "*.xls"  
+git lfs track "*.pdf"  
+git lfs track "*.xlsx"  
+git add .gitattributes  
+git commit -m "lfs" -a  
+git push  
