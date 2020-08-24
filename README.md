@@ -46,24 +46,24 @@ git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
 ### 3.1 delete already commited large file
-a.使用 git 命令删除要删除的大文件，如：100M以上，然后提交  
-b.使用 git clone --mirror http://172.16.10.13/chenmingjian/test-project.git(远程） 或者本地GIT 路径  
-c.下载 bfg-1.13.0.jar  https://rtyley.github.io/bfg-repo-cleaner/  
-d.执行 java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <第二部克隆出来的路径>  
-如果提示:  
+a.git rm --cached somefile.ext，For example :100M above, then submit  
+b.use git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(远程） or  local git repository path>  
+c.download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
+d.exec java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>  
+If you are prompted:  
 Scanning packfile for large blobs completed in 16 ms.  
 Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?  
-进入<第二部克隆出来的路径> 执行 
+Enter <path cloned in step b> then execute 
 git gc
-然后再执行 java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <第二部克隆出来的路径>  
-e.执行 git push  
-如果提示bare相关的消息，则对本地的源库执行允许非bare的提交，再执行push  
+Then execute java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <<path cloned in step b>  
+e.exec git push  
+If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow 
 git config --bool core.bare true  
 git push 
 
-f.如果是本地库，则需要恢复本地库的bare禁止提交模式 
+f.If it is a local library, you need to restore the local library's BARE no-commit mode 
 git config --bool core.bare false 
-### 3.2 安装 git lfs
+### 3.2 install git lfs
 git lfs install  
 git lfs track "*.psd"  
 git lfs track "*.doc"  
