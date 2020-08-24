@@ -46,7 +46,7 @@ git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
 ### 3.1 delete already commited large file
-a.git rm --cached somefile.ext£¬For example :100M above, then submit  
+a.git rm --cached somefile.ext For example :100M above, then submit  
 b.use git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(Ô¶³Ì£© or  local git repository path>  
 c.download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
 d.exec java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>  
