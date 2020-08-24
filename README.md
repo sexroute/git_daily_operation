@@ -46,7 +46,7 @@ git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
 ### 3.1 delete already commited large file
-a.使用 git 命令删除要删除的大文件，如：100M以上，然后提交并推送  
+a.使用 git 命令删除要删除的大文件，如：100M以上，然后提交  
 b.使用 git clone --mirror http://172.16.10.13/chenmingjian/test-project.git(远程） 或者本地GIT 路径  
 c.下载 bfg-1.13.0.jar  https://rtyley.github.io/bfg-repo-cleaner/  
 d.执行 java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <第二部克隆出来的路径>  
@@ -71,6 +71,9 @@ git lfs track "*.docx"
 git lfs track "*.xls"  
 git lfs track "*.pdf"  
 git lfs track "*.xlsx"  
+git lfs track "*.ppt"  
+git lfs track "*.pptx"  
+git lfs track "*.zip"  
 git add .gitattributes  
 git commit -m "lfs" -a  
 git push  
