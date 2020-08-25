@@ -54,7 +54,7 @@ b. clone remote or local repository to local directory in mirror mode: name like
 parent directory of local repository>**git clone --mirror \<local git repository path>**  
 c. download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
 d. go to the parent ditectory of the mirrored cloned repository, exec  
-parent directory of local repository>**java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M \<The path cloned in step b>**  
+parent directory of local repository>**java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M **  
 If you are prompted:  
 >Scanning packfile for large blobs completed in 16 ms.  
 >Warning : no large blobs matching criteria found in packfiles does the repo need to be packed?  
