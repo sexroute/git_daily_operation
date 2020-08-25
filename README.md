@@ -51,9 +51,9 @@ a.delete already commited large file and keep local one
 then commit:  
 **git commit**  
 b. clone remote or local repository to local directory in mirror mode: name like <repository>.git  
-**git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(remote) or  local git repository path>**  
+**git clone --mirror <local git repository path>**  
 c. download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
-d. exec  
+d. go to the parent ditectory of the mirrored cloned repository, exec  
 **java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>**  
 If you are prompted:  
 >Scanning packfile for large blobs completed in 16 ms.  
@@ -61,10 +61,11 @@ If you are prompted:
 
 Enter path cloned in step b then execute  
 **git gc**  
-Then execute  
+Then go to the parent ditectory of the mirrored cloned repository, execute  
 **java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <path cloned in step b>**  
-e. exec **git push**  
-If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow  
+e.enter the cloned directory and exec  
+**git push**  
+If you are prompted for **"bare"** related messages, commit to the local source library to allow non-bare, and then exec push as follow  
 **git config --bool core.bare true  
 **git push** 
 
