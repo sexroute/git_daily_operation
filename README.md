@@ -46,7 +46,9 @@ git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
 ### 3.1 delete already commited large file
-a. **git rm --cached <somefile.ext>** For example :100M above, then submit: **git commit**  
+a. **git rm --cached <somefile.ext>**  
+then commit:  
+**git commit**  
 b. use  
 **git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(remote) or  local git repository path>**  
 c. download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
@@ -63,7 +65,7 @@ Then execute
 e. exec **git push**  
 If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow 
 **git config --bool core.bare true  
-**git push 
+**git push** 
 
 f. If it is a local library, you need to restore the local library's BARE no-commit mode 
 **git config --bool core.bare false 
