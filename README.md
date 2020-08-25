@@ -45,7 +45,7 @@ git branch -vv
 git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
-### 3.1 delete already commited large file
+### 3.1 delete already commited large file  
 a.delete already commited large file and keep local one  
 **git rm --cached <somefile.ext>**  
 then commit:  
@@ -64,11 +64,11 @@ Enter path cloned in step b then execute
 Then execute  
 **java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <path cloned in step b>**  
 e. exec **git push**  
-If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow 
+If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow  
 **git config --bool core.bare true  
 **git push** 
 
-f. If it is a local library, you need to restore the local library's BARE no-commit mode 
+f. If it is a local library, you need to restore the local library's BARE no-commit mode  
 **git config --bool core.bare false 
 ### 3.2 install git lfs
 git lfs install  
