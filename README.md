@@ -51,7 +51,7 @@ a.delete already commited large file and keep local one
 then commit:  
 **local repository>git commit**  
 b. clone remote or local repository to local directory in mirror mode: name like a.git  
-**parent directory of local repository>git clone --mirror <local git repository path>**  
+**parent directory of local repository>git clone --mirror \<local git repository path>**  
 c. download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
 d. go to the parent ditectory of the mirrored cloned repository, exec  
 **parent directory of local repository>java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>**  
