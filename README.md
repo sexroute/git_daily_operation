@@ -45,7 +45,7 @@ git branch -vv
 git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
-### 3.1 delete already commited large file  
+### 3.1 How to remove a too large file in a committed repositorie
 a.delete already commited large file and keep local one  
 local repository directory>**git rm --cached <somefile.ext>**  
 then commit:  
