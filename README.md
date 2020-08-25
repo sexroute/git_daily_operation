@@ -58,7 +58,8 @@ If you are prompted:
 
 Enter path cloned in step b then execute  
 **git gc**  
-Then execute **java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <path cloned in step b>**  
+Then execute  
+**java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <path cloned in step b>**  
 e. exec **git push**  
 If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow 
 **git config --bool core.bare true  
