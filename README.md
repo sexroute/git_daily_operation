@@ -49,7 +49,7 @@ git push -u origin/release/caigou_v1.0
 a. **git rm --cached <somefile.ext>**  
 then commit:  
 **git commit**  
-b. use  
+b. clone remote or local repository to local directory in mirror mode  
 **git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(remote) or  local git repository path>**  
 c. download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
 d. exec  
