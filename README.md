@@ -46,23 +46,25 @@ git push -u origin/release/caigou_v1.0
 
 ## 3 git large file
 ### 3.1 delete already commited large file
-a.git rm --cached somefile.ext For example :100M above, then submit  
-b.use git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(Ô¶³Ì£© or  local git repository path>  
+a.**git rm --cached <somefile.ext>** For example :100M above, then submit: **git commit**  
+b.use  
+**git clone --mirror <http://172.16.10.13/chenmingjian/test-project.git(Ô¶³Ì£© or  local git repository path>**  
 c.download bfg-1.13.0.jar  (from https://rtyley.github.io/bfg-repo-cleaner/)  
-d.exec java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>  
+d.exec  
+**java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <The path cloned in step b>**  
 If you are prompted:  
-Scanning packfile for large blobs completed in 16 ms.  
-Warning : no large blobs matching criteria found in packfiles - does the repo need to be packed?  
-Enter <path cloned in step b> then execute 
-git gc
-Then execute java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <<path cloned in step b>  
-e.exec git push  
-If you are prompted for "bare" related messages, commit to the local source library to allow non-bare, and then exec push as follow 
-git config --bool core.bare true  
-git push 
+_ _Scanning _ _packfile _ _for _ _large _ _blobs _ _completed _ _in _ _16 _ _ms.  
+_ _Warning : _ _no l_ _arge _ _blobs _ _matching _ _criteria _ _found _ _in _ _packfiles _ _does _ _the _ _repo _ _need _ _to _ _be _ _packed?  
+**Enter <path cloned in step b> then execute** 
+**git gc
+Then execute **java -jar bfg-1.13.0.jar --strip-blobs-bigger-than 100M <path cloned in step b>**  
+e.exec **git push**  
+If you are prompted for _ _"bare" _ _related _ _messages, _ _commit _ _to _ _the _ _local _ _source _ _library _ _to _ _allow _ _non-bare, _ _and _ _then _ _exec _ _push _ _as _ _follow 
+**git config --bool core.bare true  
+**git push 
 
 f.If it is a local library, you need to restore the local library's BARE no-commit mode 
-git config --bool core.bare false 
+**git config --bool core.bare false 
 ### 3.2 install git lfs
 git lfs install  
 git lfs track "*.psd"  
