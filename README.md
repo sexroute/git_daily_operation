@@ -94,3 +94,8 @@ git config --global https.proxy https://127.0.0.1:1080
 git config --global --unset http.proxy  
 
 git config --global --unset https.proxy  
+
+## git tag  
+git tag -a v1.4 -m "my version 1.4"  
+git push origin --tags  
+
