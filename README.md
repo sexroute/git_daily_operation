@@ -71,7 +71,7 @@ go to he clone directory and exec push again
 cloned mirror directory>**git push**  
 
 f. If it is a local library, you need to restore the local library's BARE no-commit mode  
-local repository directory>**git config --bool core.bare false 
+local repository directory>**git config --bool core.bare false**  
 ### 3.2 install git lfs
 git lfs install  
 git lfs track "*.psd"  
