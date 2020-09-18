@@ -74,16 +74,16 @@ f. If it is a local library, you need to restore the local library's BARE no-com
 local repository directory>**git config --bool core.bare false**  
 ### 3.2 install git lfs
 git lfs install  
-git lfs track "*.psd"  
-git lfs track "*.doc"  
-git lfs track "*.docx"  
-git lfs track "*.xls"  
-git lfs track "*.pdf"  
-git lfs track "*.xlsx"  
-git lfs track "*.ppt"  
-git lfs track "*.pptx"  
-git lfs track "*.zip"  
-git lfs track "*.exe"  
+git lfs track "\*.psd"  
+git lfs track "\*.doc"  
+git lfs track "\*.docx"  
+git lfs track "\*.xls"  
+git lfs track "\*.pdf"  
+git lfs track "\*.xlsx"  
+git lfs track "\*.ppt"  
+git lfs track "\*.pptx"  
+git lfs track "\*.zip"  
+git lfs track "\*.exe"  
 git add .gitattributes  
 git commit -m "lfs" -a  
 git push  
