@@ -83,6 +83,7 @@ git lfs track "*.xlsx"
 git lfs track "*.ppt"  
 git lfs track "*.pptx"  
 git lfs track "*.zip"  
+git lfs track "*.exe"  
 git add .gitattributes  
 git commit -m "lfs" -a  
 git push  
