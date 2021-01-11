@@ -104,3 +104,6 @@ git push origin --tags
 
 ## git save username and password
 git config --global credential.helper store  
+if prompted " fatal: $HOME not set"  
+git config --system user.email "your name here"  
+git config --system user.name "your email@example.com"  
