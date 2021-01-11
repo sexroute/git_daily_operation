@@ -5,9 +5,10 @@
 echo "# git_daily_operation" >> README.md  
 git init  
 git add README.md  
-git commit -m "first commit"  
+git commit -m "first commit"
+git branch -M main
 git remote add origin https://github.com/sexroute/git_daily_operation.git  
-git push -u origin master  
+git push -u origin main  
 
 ### 1.2 or push an existing repository from the command line
 git remote add origin https://github.com/sexroute/git_daily_operation.git
