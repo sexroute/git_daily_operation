@@ -102,3 +102,5 @@ git config --global --unset https.proxy
 git tag -a v1.4 -m "my version 1.4"  
 git push origin --tags  
 
+## git save username and password
+git config --global credential.helper store  
