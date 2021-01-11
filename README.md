@@ -4,9 +4,9 @@
 ### 1.1 or create a new repository on the command line
 echo "# git_daily_operation" >> README.md  
 git init  
-git add README.md  
-git commit -m "first commit"
-git branch -M main
+git add README.md   
+git commit -m "first commit"  
+git branch -M main  
 git remote add origin https://github.com/sexroute/git_daily_operation.git  
 git push -u origin main  
 
