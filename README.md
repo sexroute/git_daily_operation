@@ -92,12 +92,10 @@ git push
 
 ### 3.3 git set and unset proxy
 git config --global http.proxy http://127.0.0.1:1080  
-
 git config --global https.proxy http://127.0.0.1:1080  
-
 git config --global --unset http.proxy  
-
 git config --global --unset https.proxy  
+git config --global http.sslverify false  
 
 ## git tag  
 git tag -a v1.4 -m "my version 1.4"  
@@ -108,3 +106,5 @@ git config --global credential.helper store
 if prompted " fatal: $HOME not set"  
 git config --system user.email "your name here"  
 git config --system user.name "your email@example.com"  
+
+
