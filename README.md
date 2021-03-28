@@ -108,4 +108,7 @@ if prompted " fatal: $HOME not set"
 git config --system user.email "your name here"  
 git config --system user.name "your email@example.com"  
 
+## git reset like remote original/master (depend on the branch name)
+git fetch origin  
+git reset --hard origin/master  
 
