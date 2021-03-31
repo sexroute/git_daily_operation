@@ -1,0 +1,19 @@
+void CCustomDB::GetLoginInfo(CString &m_sDbUser, CString &m_sDbPwd)
+{
+    CApexIni theCFG;
+    char sUser[1024]={0};
+    char sPwd[1024]={0};
+    char sEnUser[1024]={0};
+    char sEnPwd[1024]={0};
+    
+    theCFG.OpenAtExeDirectory(m_sIniFile);
+    strcpy(sEnUser,theCFG.GetValue("DBINFO","USER"));
+    strcpy(sEnPwd,theCFG.GetValue("DBINFO","PWD"));
+
+    char key[8]="dse r&d";
+    des3_ecb_decrypt(key,sEnUser,sUser);
+    des3_ecb_decrypt(key,sEnPwd,sPwd);
+
+    m_sDbUser.Format("%s",sUser);
+    m_sDbPwd.Format("%s",sPwd);
+}

@@ -1,0 +1,172 @@
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('Company')
+            and   type = 'U')
+   drop table Company
+go
+
+
+/*==============================================================*/
+/* Table: Company                                               */
+/*==============================================================*/
+create table Company (
+COMPANY              Domain_1             null,
+COMPANY_ALIAS        char(10)             null,
+"GROUP"              char(100)            null,
+constraint AK_2_COMPANY unique (COMPANY)
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('dse_user')
+            and   type = 'U')
+   drop table dse_user
+go
+
+
+/*==============================================================*/
+/* Table: dse_user                                              */
+/*==============================================================*/
+create table dse_user (
+username             char(20)             not null,
+password             char(20)             null,
+userlevel            int                  not null,
+factory_name         char(100)            null,
+company              char(100)            null,
+setid                char(20)             null,
+"group"              char(100)            null,
+refreshtime          int                  null,
+browseset            int                  null
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('machine')
+            and   type = 'U')
+   drop table machine
+go
+
+
+/*==============================================================*/
+/* Table: machine                                               */
+/*==============================================================*/
+create table machine (
+PLANTID              char(20)             null,
+COMPANY              char(100)            null,
+FACTORY_NAME         char(100)            null,
+SETID                char(20)             null,
+VIBCHANN_NUM         int                  null,
+SAMPLE_FREQ          int                  null,
+SAMPLE_NUM           int                  null,
+PROCCHANN_NUM        int                  null,
+REV                  int                  null,
+REV2                 int                  null,
+GRAPH_TYPE           int                  null,
+MACHINE_TYPE         int                  null,
+DRIVER_TYPE          int                  null,
+ROTATE_TYPE          int                  null,
+BEAR_TYPE            int                  null,
+REV_TYPE             int                  null,
+SEAL_TYPE            int                  null,
+CONN_TYPE            int                  null
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('channel')
+            and   type = 'U')
+   drop table channel
+go
+
+
+/*==============================================================*/
+/* Table: channel                                               */
+/*==============================================================*/
+create table channel (
+ID                   int                  not null,
+COMPANY              char(100)            null,
+FACTORY_NAME         char(100)            null,
+PLANTID              char(20)             null,
+CHANNID              char(20)             null,
+CHANN_ALIAS          char(20)             null,
+ALARM_LOW            real                 null,
+ALARM_HIGH           real                 null,
+CHANN_TYPE           int                  null,
+SENSOR_TYPE          int                  null,
+REVTYPE              int                  null,
+LIST                 int                  null,
+UNIT                 char(20)             null,
+SENSITIVITY          real                 null,
+CHECK_ALARM          int                  null,
+constraint PK_CHANNEL primary key  (ID)
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('Factory')
+            and   type = 'U')
+   drop table Factory
+go
+
+
+/*==============================================================*/
+/* Table: Factory                                               */
+/*==============================================================*/
+create table Factory (
+FACTORY_NAME         char(100)            null,
+FACTORY_ALISA        char(10)             null,
+COMPANY              Domain_1             null
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('PLANT_AXIS')
+            and   type = 'U')
+   drop table PLANT_AXIS
+go
+
+
+/*==============================================================*/
+/* Table: PLANT_AXIS                                            */
+/*==============================================================*/
+create table PLANT_AXIS (
+ID                   int                  not null,
+COMPANY              char(100)            null,
+FACTORY_NAME         char(100)            null,
+PLANTID              char(20)             null,
+VERCHANN             char(20)             null,
+HORCHANN             char(20)             null,
+LOCATION_TYPE        int                  null,
+constraint PK_PLANT_AXIS primary key  (ID)
+)
+go
+
+if exists (select 1
+            from  sysobjects
+           where  id = object_id('SetTable')
+            and   type = 'U')
+   drop table SetTable
+go
+
+
+/*==============================================================*/
+/* Table: SetTable                                              */
+/*==============================================================*/
+create table SetTable (
+ID                   int                  null,
+SETID                char(20)             not null,
+COMPANY              char(100)            null,
+FACTORY_NAME         char(100)            null,
+IP                   char(30)             null,
+PORT                 int                  null,
+SEND_INTERVAL        int                  null,
+IF_SEND              int                  null,
+constraint PK_SETTABLE primary key  (SETID)
+)
+go
+

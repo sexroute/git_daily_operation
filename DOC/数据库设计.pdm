@@ -1,0 +1,3554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner ID="{23F67A74-95F5-46D8-973F-C3EF542F3097}" Name="PhysicalDataModel" Objects="205" Symbols="15" Type="{CDE44E21-9669-11D1-9914-006097355D9B}" signature="PDM_DATA_MODEL_XML" version="9.5.0.660"?>
+<!--请不要编辑这个文件-->
+
+<Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
+
+<o:RootObject Id="o1">
+<c:Children>
+<o:Model Id="o2">
+<a:ObjectID>23F67A74-95F5-46D8-973F-C3EF542F3097</a:ObjectID>
+<a:Name>PhysicalDataModel</a:Name>
+<a:Code>PhysicalDataModel</a:Code>
+<a:CreationDate>1160027340</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:PackageOptionsText>
+[FolderOptions]
+
+[FolderOptions\Physical Objects]
+GenerationCheckModel=Yes
+GenerationPath=
+RevPkey=Yes
+RevFkey=Yes
+RevAkey=Yes
+RevCheck=Yes
+RevIndx=Yes
+RevOpts=Yes
+RevViewAsTabl=No
+RevViewOpts=Yes
+RevSystAsTabl=Yes
+RevSynmAsTabl=No
+RevTablPerm=No
+RevViewPerm=No
+RevProcPerm=No
+RevDbpkPerm=No
+RevSqncPerm=No
+RevAdtPerm=No
+RevUserPriv=No
+RevGrpePriv=No
+RevRolePriv=No
+GenScriptName=crebas
+GenScriptName0=
+GenScriptName1=
+GenScriptName2=
+GenScriptName3=
+GenScriptName4=
+GenScriptName5=
+GenScriptName6=
+GenScriptName7=
+GenScriptName8=
+GenScriptName9=
+GenPathName=
+GenSingleFile=Yes
+GenTrgScriptName=cretrg
+GenTrgScriptName0=
+GenTrgScriptName1=
+GenTrgScriptName2=
+GenTrgScriptName3=
+GenTrgScriptName4=
+GenTrgScriptName5=
+GenTrgScriptName6=
+GenTrgScriptName7=
+GenTrgScriptName8=
+GenTrgScriptName9=
+GenTrgPathName=
+GenTrgSingleFile=Yes
+GenODBC=No
+GenCheckModel=Yes
+GenScriptPrev=Yes
+GenArchiveModel=No
+GenDataPathName=
+GenDataSinglefile=Yes
+GenDataScriptName=testdata
+GenDataScriptName0=
+GenDataScriptName1=
+GenDataScriptName2=
+GenDataScriptName3=
+GenDataScriptName4=
+GenDataScriptName5=
+GenDataScriptName6=
+GenDataScriptName7=
+GenDataScriptName8=
+GenDataScriptName9=
+GenDataOdbc=No
+GenDataDelOld=No
+GenDataTitle=No
+GenDataDefNumRows=20
+GenDataCommit=0
+GenDataPacket=0
+GenDataCSV=No
+GenDataOwner=No
+GenDataProfNumb=
+GenDataProfChar=
+GenDataProfDate=
+GenTspcCrea=Yes
+GenTspcDrop=Yes
+GenTspcHead=Yes
+GenTspcFoot=Yes
+GenTspcCmmt=Yes
+GenStorCrea=Yes
+GenStorDrop=Yes
+GenStorCmmt=Yes
+GenUddtCrea=Yes
+GenUddtDval=Yes
+GenUddtChck=Yes
+GenUddtCmmt=Yes
+GenUddtDrop=Yes
+GenClssCrea=Yes
+GenClssHead=Yes
+GenClssFoot=Yes
+GenClssCmmt=Yes
+GenClssDrop=Yes
+GenClssInst=Yes
+GenClssSupp=Yes
+GenClssPerm=No
+GenDtbsCrea=Yes
+GenDtbsOpts=Yes
+GenDtbsHead=Yes
+GenDtbsFoot=Yes
+GenDtbsOpen=Yes
+GenDtbsClose=Yes
+GenDtbsDrop=Yes
+GenUserCrea=Yes
+GenUserGrant=Yes
+GenUserDrop=Yes
+GenUserPriv=No
+GenGrpeCrea=Yes
+GenGrpeDrop=Yes
+GenGrpePriv=No
+GenRoleCrea=Yes
+GenRoleDrop=Yes
+GenRolePriv=No
+GenSynmCrea=Yes
+GenSynmDrop=Yes
+GenSynmTabl=Yes
+GenSynmView=Yes
+GenSynmProc=Yes
+GenSynmSynm=Yes
+GenSynmDbpk=Yes
+GenSynmSqnc=Yes
+GenTablCrea=Yes
+GenTablChck=Yes
+GenTablCntr=No
+GenTablOpts=Yes
+GenTablHead=Yes
+GenTablFoot=Yes
+GenTablCmmt=Yes
+GenTablDrop=Yes
+GenTablPerm=No
+GenColnUddt=Yes
+GenColnDval=Yes
+GenColnChck=Yes
+GenColnCntr=No
+GenColnOpts=Yes
+GenColnCmmt=Yes
+GenPkeyCrea=Yes
+GenPkeyCntr=No
+GenPkeyOpts=Yes
+GenPkeyDrop=Yes
+GenPkeyCmmt=Yes
+GenAkeyCrea=Yes
+GenAkeyCntr=No
+GenAkeyOpts=Yes
+GenAkeyDrop=Yes
+GenAkeyCmmt=Yes
+GenRefrCrea=Yes
+GenRefrCntr=Yes
+GenRefrIdcl=Yes
+GenRefrIDUR=Yes
+GenRefrIDUC=Yes
+GenRefrIDUN=Yes
+GenRefrIDUD=Yes
+GenRefrIDDR=Yes
+GenRefrIDDC=Yes
+GenRefrIDDN=Yes
+GenRefrIDDD=Yes
+GenRefrDrop=Yes
+GenRefrCmmt=Yes
+GenIndxCrea=Yes
+GenIndxPkey=Yes
+GenIndxFkey=Yes
+GenIndxAkey=Yes
+GenIndxClus=Yes
+GenIndxOthr=Yes
+GenIndxOpts=Yes
+GenIndxCmmt=Yes
+GenIndxDrop=Yes
+GenViewCrea=Yes
+GenViewHead=Yes
+GenViewFoot=Yes
+GenViewCmmt=Yes
+GenViewDrop=Yes
+GenViewPerm=No
+GenJidxCrea=Yes
+GenJidxHead=Yes
+GenJidxFoot=Yes
+GenJidxDrop=Yes
+GenJidxCmmt=Yes
+GenSqncCrea=Yes
+GenSqncDrop=Yes
+GenSqncCmmt=Yes
+GenSqncPerm=No
+GenTrgrCrea=Yes
+GenTrgrDrop=Yes
+GenTrgrCmmt=Yes
+GenTrgrFIns=Yes
+GenTrgrFUpd=Yes
+GenTrgrFDel=Yes
+GenProcCrea=Yes
+GenProcDrop=Yes
+GenProcHead=Yes
+GenProcFoot=Yes
+GenProcCmmt=Yes
+GenProcPerm=No
+GenScriptTitle=Yes
+GenScriptNamLabl=No
+GenScriptQDtbs=Yes
+GenScriptQOwnr=Yes
+GenScriptCase=0
+GenScriptCharset=0
+GenScriptNAcct=No
+GenScriptODBC=No
+GenUseSync=No
+GenSyncChoice=0
+GenSyncArch=
+GenKeepBackTabl=1
+GenTmpTablDrop=No
+GenTrgrStdMsg=Yes
+GenTrgrMsgTab=
+GenTrgrMsgNo=
+GenTrgrMsgTxt=
+GenRuleCrea=Yes
+GenRuleDrop=Yes
+GenRuleCmmt=Yes
+GenSynmPathName=
+GenSynmSinglefile=Yes
+GenSynmScriptName=synonym
+GenSynmScriptName0=
+GenSynmScriptName1=
+GenSynmScriptName2=
+GenSynmScriptName3=
+GenSynmScriptName4=
+GenSynmScriptName5=
+GenSynmScriptName6=
+GenSynmScriptName7=
+GenSynmScriptName8=
+GenSynmScriptName9=
+GenSynmOdbc=No
+GenSynmTitle=No
+GenSynmOwner=No
+GenPrivPathName=
+GenPrivSinglefile=Yes
+GenPrivScriptName=privilege
+GenPrivScriptName0=
+GenPrivScriptName1=
+GenPrivScriptName2=
+GenPrivScriptName3=
+GenPrivScriptName4=
+GenPrivScriptName5=
+GenPrivScriptName6=
+GenPrivScriptName7=
+GenPrivScriptName8=
+GenPrivScriptName9=
+GenPrivOdbc=No
+GenPrivTitle=No
+GenPrivOwner=No
+GenDbpkCrea=Yes
+GenDbpkDrop=Yes
+GenDbpkPerm=No
+
+[FolderOptions\Pdm]
+IndxIQName=%COLUMN%_%INDEXTYPE%
+IndxPK=Yes
+IndxFK=Yes
+IndxAK=Yes
+IndxPKName=%TABLE%_PK
+IndxFKName=%REFR%_FK
+IndxAKName=%AKEY%_AK
+IndxPreserve=No
+IndxThreshold=0
+RefrPreserve=No
+JidxPreserve=No
+RbldMultiFact=Yes
+RbldMultiDim=Yes
+RbldMultiJidx=Yes
+CubePreserve=No
+CubeScriptPath=
+CubeScriptCase=0
+CubeScriptCharset=0
+CubeScriptNacct=No
+CubeScriptHeader=No
+CubeScriptExt=csv
+CubeScriptExt0=txt
+CubeScriptExt1=
+CubeScriptExt2=
+CubeScriptSep=,
+CubeScriptDeli=&quot;
+TrgrPreserve=No
+TrgrIns=Yes
+TrgrUpd=Yes
+TrgrDel=Yes
+TrgrC2Ins=Yes
+TrgrC2Upd=Yes
+TrgrC3=Yes
+TrgrC4=Yes
+TrgrC5=Yes
+TrgrC6=Yes
+TrgrC7=Yes
+TrgrC8=Yes
+TrgrC9=Yes
+TrgrC10=Yes
+TrgrC11=Yes
+TrgrC1=Yes
+TrgrC12Ins=Yes
+TrgrC12Upd=Yes
+TrgrC13=Yes
+</a:PackageOptionsText>
+<a:ModelOptionsText>
+[ModelOptions]
+
+[ModelOptions\Physical Objects]
+CaseSensitive=No
+DisplayName=Yes
+DefaultDttp=
+IgnoreOwner=No
+RefrUnique=No
+RefrAutoMigrate=Yes
+RefrMigrateReuse=Yes
+RefrMigrateDomain=Yes
+RefrMigrateCheck=Yes
+RefrMigrateRule=Yes
+RefrMigrateExtd=No
+RefrMigrDefaultLink=No
+RefrDfltImpl=D
+ColnFKName=%.3:PARENT%_%COLUMN%
+ColnFKNameUse=No
+DomnForbDivg=No
+DomnCopyDttp=Yes
+DomnCopyChck=No
+DomnCopyRule=No
+DomnCopyMand=No
+DomnCopyExtd=No
+DomnCopyProf=No
+
+[ModelOptions\Physical Objects\ClssNamingOptions]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMPCKG\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\PDMDOMN\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\TABL\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\COLN\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\REFR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VREF\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\VIEW\Code]
+Template=
+MaxLen=128
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FACT\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DIMN\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\CUBE\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\MEAS\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DATTR\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\FILO\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass]
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Name]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Physical Objects\ClssNamingOptions\DefaultClass\Code]
+Template=
+MaxLen=254
+Case=M
+ValidChar=
+InvldChar=
+AllValid=1
+NoAccent=0
+DefaultChar=
+Script=
+ConvTable=
+
+[ModelOptions\Connection]
+
+[ModelOptions\Pdm]
+
+[ModelOptions\Generate]
+
+[ModelOptions\Generate\Cdm]
+CheckModel=1
+SaveLinks=1
+NameToCode=0
+Notation=2
+
+[ModelOptions\Generate\Oom]
+CheckModel=1
+SaveLinks=1
+ORMapping=0
+NameToCode=0
+ClassPrefix=
+
+[ModelOptions\NamingOptionsTemplates]
+
+[ModelOptions\Default Opts]
+
+[ModelOptions\Default Opts\TABL]
+PhysOpts=
+
+[ModelOptions\Default Opts\COLN]
+PhysOpts=
+
+[ModelOptions\Default Opts\INDX]
+PhysOpts=
+
+[ModelOptions\Default Opts\AKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\PKEY]
+PhysOpts=
+
+[ModelOptions\Default Opts\STOR]
+PhysOpts=
+
+[ModelOptions\Default Opts\TSPC]
+PhysOpts=
+
+[ModelOptions\Default Opts\SQNC]
+PhysOpts=
+
+[ModelOptions\Default Opts\DTBS]
+PhysOpts=
+</a:ModelOptionsText>
+<c:DBMS>
+<o:Shortcut Id="o3">
+<a:ObjectID>69B175F2-D93E-44AC-A58C-FB87FBD8E4B9</a:ObjectID>
+<a:Name>Microsoft SQL Server 2000</a:Name>
+<a:Code>MSSQLSRV2000</a:Code>
+<a:CreationDate>1160027340</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160027340</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:TargetID>E2B854D3-FF56-485F-BEF3-98AEC7E65DDC</a:TargetID>
+<a:TargetClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetClassID>
+</o:Shortcut>
+</c:DBMS>
+<c:PhysicalDiagrams>
+<o:PhysicalDiagram Id="o4">
+<a:ObjectID>C78B3C1F-2BFB-4FBE-8F24-5C69A670331A</a:ObjectID>
+<a:Name>PhysicalDiagram_1</a:Name>
+<a:Code>PhysicalDiagram_1</a:Code>
+<a:CreationDate>1160027340</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DisplayPreferences>
+[DisplayPreferences]
+
+[DisplayPreferences\PDM]
+
+[DisplayPreferences\General]
+Adjust to text=Yes
+Snap Grid=No
+Display Grid=No
+Show Page Delimiter=Yes
+Grid size=0
+Graphic unit=2
+Window color=255, 255, 255
+Background image=
+Background mode=8
+Watermark image=
+Watermark mode=8
+Show watermark on screen=No
+Gradient mode=0
+Gradient end color=255, 255, 255
+Show Swimlane=Yes
+SwimlaneVert=Yes
+
+[DisplayPreferences\Object]
+Mode=0
+Trunc Length=80
+Word Length=80
+Word Text= !&quot;&quot;#$%&amp;&#39;()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+Shortcut IntIcon=Yes
+Shortcut IntLoct=No
+Shortcut ExtIcon=Yes
+Shortcut ExtLoct=No
+File Location=No
+TablColn=Yes
+ColnMode=0
+ColnMax=5
+TablIndx=No
+TablKey=No
+TablTrgr=No
+TablOwnr=No
+ColnDttp=Yes
+ColnDomn=No
+ColnShowDomn=No
+ColnKey=Yes
+ColnIndx=No
+ColnMand=No
+ViewTabl=Yes
+ViewColn=Yes
+ViewOwnr=No
+VColName=Yes
+VColExpr=No
+VColDttp=No
+VColCMod=1
+VColCMax=5
+RefrName=No
+RefrJoin=No
+RefrCnam=Yes
+RefrIntg=No
+RefrImpl=No
+RefrCard=No
+RefrMode=0
+VRefName=No
+VRefJoin=No
+VRefMode=0
+
+[DisplayPreferences\Symbol]
+
+[DisplayPreferences\Symbol\PDMPCKG]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=3600
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\TABL]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+TableColumnsFont=Arial,8,N
+TableColumnsFont color=0, 0, 0
+TablePkColumnsFont=宋体,8,U
+TablePkColumnsFont color=0, 0, 0
+TableIndexsFont=Arial,8,N
+TableIndexsFont color=0, 0, 0
+TableKeysFont=Arial,8,N
+TableKeysFont color=0, 0, 0
+TableTriggersFont=Arial,8,N
+TableTriggersFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=192 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\REFR]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+CARDFont=Arial,8,N
+CARDFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VREF]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\VIEW]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+ViewColumnnFont=Arial,8,N
+ViewColumnnFont color=0, 0, 0
+ViewTablesFont=Arial,8,N
+ViewTablesFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4800
+Height=4000
+Brush color=208 208 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\PROC]
+DISPNAMEFont=Arial,8,N
+DISPNAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Width=4000
+Height=1000
+Brush color=255 255 192
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\FILO]
+NAMEFont=Arial,8,N
+NAMEFont color=0, 0, 0
+AutoAdjustToText=Yes
+Keep aspect=Yes
+Keep center=Yes
+Keep size=No
+Width=2400
+Height=2400
+Brush color=255 255 255
+Fill Color=No
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\USRDEPD]
+OBJXSTRFont=Arial,8,N
+OBJXSTRFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=2 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+
+[DisplayPreferences\Symbol\Free Symbol]
+Free TextFont=Arial,8,N
+Free TextFont color=0, 0, 0
+Line style=0
+AutoAdjustToText=Yes
+Keep aspect=No
+Keep center=No
+Keep size=No
+Brush color=255 255 255
+Fill Color=Yes
+Brush style=1
+Brush bitmap mode=12
+Brush gradient mode=0
+Brush gradient color=118 118 118
+Brush background image=
+Custom shape=
+Custom text mode=0
+Pen=1 0 0 0 255
+Shadow color=192 192 192
+Shadow=0
+</a:DisplayPreferences>
+<a:PaperSize>(8268, 11693)</a:PaperSize>
+<a:PageMargins>((315,354), (433,354))</a:PageMargins>
+<a:PageSize>9</a:PageSize>
+<a:PaperSource>7</a:PaperSource>
+<c:Symbols>
+<o:TableSymbol Id="o5">
+<a:CreationDate>1160027358</a:CreationDate>
+<a:ModificationDate>1160636590</a:ModificationDate>
+<a:Rect>((-28205,31566), (-12421,37912))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o6"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o7">
+<a:CreationDate>1160027362</a:CreationDate>
+<a:ModificationDate>1160636590</a:ModificationDate>
+<a:Rect>((-25241,15903), (-17309,20599))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o8"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o9">
+<a:CreationDate>1160027362</a:CreationDate>
+<a:ModificationDate>1169428684</a:ModificationDate>
+<a:Rect>((-25289,820), (-11743,14132))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o10"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o11">
+<a:CreationDate>1160029135</a:CreationDate>
+<a:ModificationDate>1169428691</a:ModificationDate>
+<a:Rect>((-11236,12726), (-214,36902))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o12"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o13">
+<a:CreationDate>1160029139</a:CreationDate>
+<a:ModificationDate>1165150951</a:ModificationDate>
+<a:Rect>((535,24470), (10218,36808))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o14"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o15">
+<a:CreationDate>1160113729</a:CreationDate>
+<a:ModificationDate>1160636590</a:ModificationDate>
+<a:Rect>((-25189,21080), (-14939,31620))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o16"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o17">
+<a:CreationDate>1160468697</a:CreationDate>
+<a:ModificationDate>1168494510</a:ModificationDate>
+<a:Rect>((26084,15023), (36538,37101))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o18"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o19">
+<a:CreationDate>1160468698</a:CreationDate>
+<a:ModificationDate>1160562675</a:ModificationDate>
+<a:Rect>((37341,23692), (52431,35882))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o20"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o21">
+<a:CreationDate>1160468699</a:CreationDate>
+<a:ModificationDate>1168494484</a:ModificationDate>
+<a:Rect>((40284,-946), (50584,8470))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o22"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o23">
+<a:CreationDate>1160468699</a:CreationDate>
+<a:ModificationDate>1168494482</a:ModificationDate>
+<a:Rect>((38803,9406), (51421,22718))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o24"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o25">
+<a:CreationDate>1160468700</a:CreationDate>
+<a:ModificationDate>1183100307</a:ModificationDate>
+<a:Rect>((25888,-16756), (39434,-670))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o26"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o27">
+<a:CreationDate>1160468700</a:CreationDate>
+<a:ModificationDate>1168494513</a:ModificationDate>
+<a:Rect>((25360,-119), (35814,13193))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o28"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o29">
+<a:CreationDate>1160542956</a:CreationDate>
+<a:ModificationDate>1167269107</a:ModificationDate>
+<a:Rect>((460,5269), (11689,20531))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o30"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o31">
+<a:CreationDate>1160545230</a:CreationDate>
+<a:ModificationDate>1160712541</a:ModificationDate>
+<a:Rect>((55288,26222), (66360,34666))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o32"/>
+</c:Object>
+</o:TableSymbol>
+<o:TableSymbol Id="o33">
+<a:CreationDate>1160545231</a:CreationDate>
+<a:ModificationDate>1160624093</a:ModificationDate>
+<a:Rect>((66000,15048), (74550,23640))</a:Rect>
+<a:LineColor>16711680</a:LineColor>
+<a:FillColor>12648384</a:FillColor>
+<a:ShadowColor>12632256</a:ShadowColor>
+<a:FontList>DISPNAME 0 Arial,8,N
+TableColumns 0 Arial,8,N
+TablePkColumns 0 宋体,8,U
+TableKeys 0 Arial,8,N
+TableIndexs 0 Arial,8,N
+TableTriggers 0 Arial,8,N</a:FontList>
+<c:Object>
+<o:Table Ref="o34"/>
+</c:Object>
+</o:TableSymbol>
+</c:Symbols>
+</o:PhysicalDiagram>
+</c:PhysicalDiagrams>
+<c:DefaultDiagram>
+<o:PhysicalDiagram Ref="o4"/>
+</c:DefaultDiagram>
+<c:Domains>
+<o:PhysicalDomain Id="o35">
+<a:ObjectID>C955AD6D-1CC5-40B0-B3CD-ABAC85CE09AD</a:ObjectID>
+<a:Name>Domain_1</a:Name>
+<a:Code>Domain_1</a:Code>
+<a:CreationDate>1160029986</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029986</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+</o:PhysicalDomain>
+</c:Domains>
+<c:Tables>
+<o:Table Id="o6">
+<a:ObjectID>8ED9C994-02C1-4603-86D1-591B9F48EC57</a:ObjectID>
+<a:Name>公司表</a:Name>
+<a:Code>Company</a:Code>
+<a:CreationDate>1160027358</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1183100187</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>保存公司信息和集团信息</a:Comment>
+<c:Columns>
+<o:Column Id="o36">
+<a:ObjectID>B6471AD6-E2FF-41F9-90AA-9A584902156F</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160027510</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160623048</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o37">
+<a:ObjectID>631D6227-E0E8-46B2-A9C3-9B81CF1831D0</a:ObjectID>
+<a:Name>公司别名</a:Name>
+<a:Code>COMPANY_ALIAS</a:Code>
+<a:CreationDate>1160027510</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160622928</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(10)</a:DataType>
+<a:Length>10</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o38">
+<a:ObjectID>C79F82D8-A86A-432C-BF75-E001A6E3C70E</a:ObjectID>
+<a:Name>集团名</a:Name>
+<a:Code>GROUP</a:Code>
+<a:CreationDate>1160027741</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160027741</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o39">
+<a:ObjectID>1DCEC8BF-59F2-4D35-9700-AB30E0F2EBAF</a:ObjectID>
+<a:Name>中间件服务器数据源ID</a:Name>
+<a:Code>DB_ID</a:Code>
+<a:CreationDate>1183100187</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1183100187</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o40">
+<a:ObjectID>EF164D9E-FD3A-4E6D-98C9-47BE111AEA05</a:ObjectID>
+<a:Name>中间件服务器数据源Name</a:Name>
+<a:Code>DB_NAME</a:Code>
+<a:CreationDate>1183100187</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1183100187</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o41">
+<a:ObjectID>19790580-E42D-46C2-A597-4ECF46D92DC1</a:ObjectID>
+<a:Name>Key_2</a:Name>
+<a:Code>Key_2</a:Code>
+<a:CreationDate>1160622928</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160623443</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o36"/>
+<o:Column Ref="o37"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o41"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o8">
+<a:ObjectID>33E29717-18EF-4FB0-B32A-27A408A5A95E</a:ObjectID>
+<a:Name>分厂表</a:Name>
+<a:Code>Factory</a:Code>
+<a:CreationDate>1160027362</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028125</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>分厂信息</a:Comment>
+<c:Columns>
+<o:Column Id="o42">
+<a:ObjectID>EB366AB2-B460-445C-8B52-5FDA097A3D1E</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>FACTORY_NAME</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160030247</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o43">
+<a:ObjectID>3784A5F5-1B66-4E1E-BC6C-153F9226A01F</a:ObjectID>
+<a:Name>分厂别名</a:Name>
+<a:Code>FACTORY_ALISA</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028125</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(10)</a:DataType>
+<a:Length>10</a:Length>
+</o:Column>
+<o:Column Id="o44">
+<a:ObjectID>440FEA33-AE98-4A1F-B1AB-BEE6644E5D2E</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160623048</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o10">
+<a:ObjectID>1A9E6DB8-D33B-41CD-ACD2-020ECB45C037</a:ObjectID>
+<a:Name>中间件服务器配置表</a:Name>
+<a:Code>SetTable</a:Code>
+<a:CreationDate>1160027362</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1169435574</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:Comment>中间服务器信息：包括自己的（0）、父的（1）、子的（2）</a:Comment>
+<c:Columns>
+<o:Column Id="o45">
+<a:ObjectID>24F87271-0BC6-4C7A-A563-7F4484E78147</a:ObjectID>
+<a:Name>ID标识</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028585</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o46">
+<a:ObjectID>439D467C-52AB-4748-8B1F-61C2A7405D53</a:ObjectID>
+<a:Name>中间件服务器名</a:Name>
+<a:Code>SETID</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028585</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o47">
+<a:ObjectID>0476A9D8-CAD1-4C1C-A34F-3932B72B75EE</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160028125</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028125</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o48">
+<a:ObjectID>FD12A6A5-920B-4533-8C6C-629FBDCF6B1F</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>FACTORY_NAME</a:Code>
+<a:CreationDate>1160028616</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028709</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o49">
+<a:ObjectID>1640EB9F-14C7-4CCC-A3C7-D348B8731183</a:ObjectID>
+<a:Name>IP地址</a:Name>
+<a:Code>IP</a:Code>
+<a:CreationDate>1160028843</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029054</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(30)</a:DataType>
+<a:Length>30</a:Length>
+</o:Column>
+<o:Column Id="o50">
+<a:ObjectID>ABF2887F-33B3-4BF2-9D55-7085D1925852</a:ObjectID>
+<a:Name>端口</a:Name>
+<a:Code>PORT</a:Code>
+<a:CreationDate>1160028843</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029054</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o51">
+<a:ObjectID>2457E033-350F-436F-8AC6-6E29C217C9DC</a:ObjectID>
+<a:Name>实时发送数据间隔</a:Name>
+<a:Code>SEND_INTERVAL</a:Code>
+<a:CreationDate>1160029054</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1169423047</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o52">
+<a:ObjectID>06817DF5-802B-48D3-87A3-D1E214722480</a:ObjectID>
+<a:Name>是否发送</a:Name>
+<a:Code>IF_SEND</a:Code>
+<a:CreationDate>1160029054</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029054</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o53">
+<a:ObjectID>23B21F66-0EA3-46A7-B5DF-95CF1B2658B4</a:ObjectID>
+<a:Name>启停车数据发送间隔</a:Name>
+<a:Code>SUD_SEND_INTERVAL</a:Code>
+<a:CreationDate>1169422938</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1169423047</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o54">
+<a:ObjectID>8A6F68F9-1056-44A7-88B3-D84960DA064D</a:ObjectID>
+<a:Name>报警数据发送间隔</a:Name>
+<a:Code>ALARM_SEND_INTERVAL</a:Code>
+<a:CreationDate>1169422938</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1169423047</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o55">
+<a:ObjectID>1F24C147-E71B-4C55-BC7C-DEF02BA3A077</a:ObjectID>
+<a:Name>转发IP</a:Name>
+<a:Code>TM_IP</a:Code>
+<a:CreationDate>1169428575</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1169428678</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>char(30)</a:DataType>
+<a:Length>30</a:Length>
+</o:Column>
+<o:Column Id="o56">
+<a:ObjectID>06675945-33BA-40F3-A6C9-D4C0EA3BA64E</a:ObjectID>
+<a:Name>转发端口</a:Name>
+<a:Code>TM_PORT</a:Code>
+<a:CreationDate>1169428678</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1169428678</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o57">
+<a:ObjectID>C3AD6DA5-EA9C-4DB2-9E7A-93ED12A4E67C</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160028585</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160028585</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o46"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o57"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o12">
+<a:ObjectID>56DD0D7E-76B7-4E93-B440-04CC687B6281</a:ObjectID>
+<a:Name>设备表</a:Name>
+<a:Code>machine</a:Code>
+<a:CreationDate>1160029135</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1183100217</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o58">
+<a:ObjectID>F1877328-976C-4123-9CB4-A58372D53C81</a:ObjectID>
+<a:Name>设备名标识</a:Name>
+<a:Code>PLANTNO</a:Code>
+<a:CreationDate>1183100217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1183100217</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o59">
+<a:ObjectID>C9EBE7FD-0C61-43BD-91BA-21C0FA950129</a:ObjectID>
+<a:Name>设备号</a:Name>
+<a:Code>PLANTID</a:Code>
+<a:CreationDate>1160029285</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619885</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o60">
+<a:ObjectID>6EF53CF8-B185-422C-BF31-E33B9934E323</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160029285</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029285</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o61">
+<a:ObjectID>F3F360BE-1D20-4F39-B790-81F8DD103700</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>FACTORY_NAME</a:Code>
+<a:CreationDate>1160029285</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160030379</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o62">
+<a:ObjectID>D3778DAA-E269-4395-8CC0-341C72A8C978</a:ObjectID>
+<a:Name>所属中间件服务器</a:Name>
+<a:Code>SETID</a:Code>
+<a:CreationDate>1160029322</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029322</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o63">
+<a:ObjectID>A72275B4-A848-4EBF-B2FF-ABAEC654ECBA</a:ObjectID>
+<a:Name>振动通道数目</a:Name>
+<a:Code>VIBCHANN_NUM</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o64">
+<a:ObjectID>1F7F64AB-AB0B-4B9D-B505-D7AC40BAD5E4</a:ObjectID>
+<a:Name>采样频率</a:Name>
+<a:Code>SAMPLE_FREQ</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o65">
+<a:ObjectID>3EBBC8E1-80E4-48E5-AF9B-C240C594B669</a:ObjectID>
+<a:Name>采样点数</a:Name>
+<a:Code>SAMPLE_NUM</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o66">
+<a:ObjectID>91DF6A52-2CBA-4234-B31E-6368D4CD1FEF</a:ObjectID>
+<a:Name>过程量通道数目</a:Name>
+<a:Code>PROCCHANN_NUM</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o67">
+<a:ObjectID>037F6F80-C595-45CF-BF09-5A04734347C9</a:ObjectID>
+<a:Name>转速1</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o68">
+<a:ObjectID>CCCFAFFC-54C5-4944-82FE-4122E912B10A</a:ObjectID>
+<a:Name>转速2</a:Name>
+<a:Code>REV2</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o69">
+<a:ObjectID>A14D23E2-EA9C-44D7-9EA0-BD312C5C8747</a:ObjectID>
+<a:Name>概貌图类型</a:Name>
+<a:Code>GRAPH_TYPE</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o70">
+<a:ObjectID>145216E4-2FF1-4F37-9377-2E01DC407330</a:ObjectID>
+<a:Name>设备类型</a:Name>
+<a:Code>MACHINE_TYPE</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o71">
+<a:ObjectID>BC094380-6D5B-4018-95B3-44CC77B7CB4A</a:ObjectID>
+<a:Name>驱动类型</a:Name>
+<a:Code>DRIVER_TYPE</a:Code>
+<a:CreationDate>1160029592</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029592</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o72">
+<a:ObjectID>C1B31577-DCDE-4FA8-BF8F-4DA59D0D55D2</a:ObjectID>
+<a:Name>旋转类型</a:Name>
+<a:Code>ROTATE_TYPE</a:Code>
+<a:CreationDate>1160029778</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029778</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o73">
+<a:ObjectID>0AF294EA-485B-49B7-B24D-5555AB9B3E44</a:ObjectID>
+<a:Name>轴承类型</a:Name>
+<a:Code>BEAR_TYPE</a:Code>
+<a:CreationDate>1160029778</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029778</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o74">
+<a:ObjectID>CE1C74D0-2E8C-4EAE-A272-73608941B385</a:ObjectID>
+<a:Name>工作转速类型</a:Name>
+<a:Code>REV_TYPE</a:Code>
+<a:CreationDate>1160029778</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031475</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o75">
+<a:ObjectID>50A74E97-2DA7-4BBF-B20E-7677A73E8208</a:ObjectID>
+<a:Name>密封类型</a:Name>
+<a:Code>SEAL_TYPE</a:Code>
+<a:CreationDate>1160029778</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029778</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o76">
+<a:ObjectID>88750447-51B5-406D-AC5E-F7AFCC5DC86D</a:ObjectID>
+<a:Name>连接类型</a:Name>
+<a:Code>CONN_TYPE</a:Code>
+<a:CreationDate>1160029778</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029778</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o77">
+<a:ObjectID>EE4727AE-C4D8-4FC7-B1DF-B2671A115EDB</a:ObjectID>
+<a:Name>一阶临界转速</a:Name>
+<a:Code>CRITSPEED_1ST</a:Code>
+<a:CreationDate>1165150772</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1165150772</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o78">
+<a:ObjectID>3069D061-BC65-40AD-A3AF-AEE55FE4634C</a:ObjectID>
+<a:Name>二阶临界转速</a:Name>
+<a:Code>CRITSPEED_2ND</a:Code>
+<a:CreationDate>1165150772</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1165150772</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o79">
+<a:ObjectID>4E8F2C90-9BA9-48CA-8181-DA2F45187191</a:ObjectID>
+<a:Name>制造厂商</a:Name>
+<a:Code>MANUFACTURER</a:Code>
+<a:CreationDate>1165150772</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1165150869</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o80">
+<a:ObjectID>1492144D-71B3-4CAA-94FA-611838F95797</a:ObjectID>
+<a:Name>投运时间</a:Name>
+<a:Code>FIRSTRUN_T</a:Code>
+<a:CreationDate>1165150935</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1165150935</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o14">
+<a:ObjectID>AD9B6B68-8CEE-4A2D-8C10-2B37883C01B5</a:ObjectID>
+<a:Name>轴心位置信息表</a:Name>
+<a:Code>PLANT_AXIS</a:Code>
+<a:CreationDate>1160029139</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1167269087</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o81">
+<a:ObjectID>059841C8-529B-4957-9775-8C45F401DEC4</a:ObjectID>
+<a:Name>ID</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160030305</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031649</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o82">
+<a:ObjectID>8AA52DA8-5054-4DD8-AC8F-0EF6BE07FEA9</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160030305</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031649</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o83">
+<a:ObjectID>F837F615-A6CA-44E7-B0C4-9619D3087CB8</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>FACTORY_NAME</a:Code>
+<a:CreationDate>1160031649</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031649</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o84">
+<a:ObjectID>B45330E6-03AC-4734-A177-91733AE0D9FC</a:ObjectID>
+<a:Name>设备号</a:Name>
+<a:Code>PLANTID</a:Code>
+<a:CreationDate>1160031683</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619900</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o85">
+<a:ObjectID>863DBA61-DA37-4666-BBA0-B41FA45F3A04</a:ObjectID>
+<a:Name>垂直测点</a:Name>
+<a:Code>VERCHANN</a:Code>
+<a:CreationDate>1160031649</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619900</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o86">
+<a:ObjectID>8850A446-3E5B-4BA1-B6B8-736BB2A82948</a:ObjectID>
+<a:Name>水平测点</a:Name>
+<a:Code>HORCHANN</a:Code>
+<a:CreationDate>1160031649</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619900</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o87">
+<a:ObjectID>3E4229FE-742D-4AA6-89F4-96865CEB9223</a:ObjectID>
+<a:Name>位置类型</a:Name>
+<a:Code>LOCATION_TYPE</a:Code>
+<a:CreationDate>1160031649</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031763</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o88">
+<a:ObjectID>4C103D69-BEB5-409D-A7C9-204A894AE0BD</a:ObjectID>
+<a:Name>轴承位置</a:Name>
+<a:Code>LOCATION</a:Code>
+<a:CreationDate>1160467326</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160467326</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o89">
+<a:ObjectID>1E0DE146-6344-4F75-9E03-972EC7336C91</a:ObjectID>
+<a:Name>报警参数</a:Name>
+<a:Code>ALARM_PARAM</a:Code>
+<a:CreationDate>1160637053</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160637053</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o90">
+<a:ObjectID>C47A52F3-4952-4878-B273-120AB41213C5</a:ObjectID>
+<a:Name>轴直径</a:Name>
+<a:Code>AXIS_DIA</a:Code>
+<a:CreationDate>1167268668</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1167268668</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o91">
+<a:ObjectID>82108661-440B-4B05-BB73-99B3EDE6C6B7</a:ObjectID>
+<a:Name>旋转方向</a:Name>
+<a:Code>ROTATE_DIRECTION</a:Code>
+<a:CreationDate>1167268668</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1167268668</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o92">
+<a:ObjectID>F6979A9E-9935-47CC-880B-C35CBEE912BC</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160031649</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031649</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o81"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o92"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o16">
+<a:ObjectID>8AA194F4-EDDA-42BD-828B-C2EFECB76CA8</a:ObjectID>
+<a:Name>用户表</a:Name>
+<a:Code>dse_user</a:Code>
+<a:CreationDate>1160113729</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o93">
+<a:ObjectID>758BE76C-4A9B-40DD-8531-C4EC5736EA5B</a:ObjectID>
+<a:Name>用户名</a:Name>
+<a:Code>username</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o94">
+<a:ObjectID>4E4FDBDA-7E77-404E-821E-401189F41A2E</a:ObjectID>
+<a:Name>密码</a:Name>
+<a:Code>password</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o95">
+<a:ObjectID>4A1DF7BE-321E-4F4E-A68D-CAD9FE7AAF41</a:ObjectID>
+<a:Name>用户级别</a:Name>
+<a:Code>userlevel</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113969</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o96">
+<a:ObjectID>6073ECDE-BDEB-44E2-A615-6A2B90C8096F</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>factory_name</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o97">
+<a:ObjectID>55DF41C3-77E0-41BB-B770-6AD75D2165C9</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>company</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o98">
+<a:ObjectID>450DF52C-8877-4158-B0CE-E67FA15624A2</a:ObjectID>
+<a:Name>中间件服务标识</a:Name>
+<a:Code>setid</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o99">
+<a:ObjectID>1FE476C9-705D-477F-A1CF-ECECA071D1F4</a:ObjectID>
+<a:Name>集团名</a:Name>
+<a:Code>group</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o100">
+<a:ObjectID>1572FBD8-96E7-4E91-BCF1-4E2AAEA7FE13</a:ObjectID>
+<a:Name>刷新时间</a:Name>
+<a:Code>refreshtime</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o101">
+<a:ObjectID>62877E6C-AE90-4336-AAAE-0808020BACF6</a:ObjectID>
+<a:Name>是否浏览装置</a:Name>
+<a:Code>browseset</a:Code>
+<a:CreationDate>1160113955</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160113955</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+<o:Table Id="o18">
+<a:ObjectID>3EE71D1E-F8E8-43C3-B87B-736722BAD145</a:ObjectID>
+<a:Name>振动报警数据表</a:Name>
+<a:Code>ALARM_VIB_$</a:Code>
+<a:CreationDate>1160468697</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494535</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>$表示公司别名和设备号组合</a:Comment>
+<c:Columns>
+<o:Column Id="o102">
+<a:ObjectID>432870D1-0A33-4DDE-B3E5-655A6B396A33</a:ObjectID>
+<a:Name>对应事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160558899</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160558902</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o103">
+<a:ObjectID>641D6894-8E3E-42E0-BC2D-FC1BE50879C1</a:ObjectID>
+<a:Name>测点号</a:Name>
+<a:Code>CHANNID</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619925</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o104">
+<a:ObjectID>0A6A099A-ED30-4AA8-9869-141D68416A3B</a:ObjectID>
+<a:Name>通频特征值</a:Name>
+<a:Code>OVERALL</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o105">
+<a:ObjectID>13C6D839-3D31-42B4-8D78-69294E17D2CA</a:ObjectID>
+<a:Name>1X特征值</a:Name>
+<a:Code>ONE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o106">
+<a:ObjectID>AC18638F-E203-4DCA-B3AD-EF2AF234F7D6</a:ObjectID>
+<a:Name>2X特征值</a:Name>
+<a:Code>TWO</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o107">
+<a:ObjectID>EFEFDC35-41BE-431F-B5C6-ACD259E40213</a:ObjectID>
+<a:Name>3X特征值</a:Name>
+<a:Code>THREE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o108">
+<a:ObjectID>E89BAE03-35A8-45EE-AB6A-9931A8AFFE93</a:ObjectID>
+<a:Name>1/2X特征值</a:Name>
+<a:Code>HALF</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o109">
+<a:ObjectID>A668FC9E-A5E5-4233-8F8A-90B9135AD595</a:ObjectID>
+<a:Name>残振</a:Name>
+<a:Code>RES</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o110">
+<a:ObjectID>D1A66061-7C3F-41C2-A39E-18AB2150DA48</a:ObjectID>
+<a:Name>1X相位</a:Name>
+<a:Code>ONEPHASE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o111">
+<a:ObjectID>008502DE-88E2-4569-B67E-20ECE14BA373</a:ObjectID>
+<a:Name>2X相位</a:Name>
+<a:Code>TWOPHASE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o112">
+<a:ObjectID>FB09E1E7-8581-4212-BC55-96651CEB8A5F</a:ObjectID>
+<a:Name>3X相位</a:Name>
+<a:Code>THREEPHASE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o113">
+<a:ObjectID>CAEEA5C4-F364-4465-8006-CAC845288E88</a:ObjectID>
+<a:Name>1/2相位</a:Name>
+<a:Code>HALFPHASE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o114">
+<a:ObjectID>75DD6A17-3DAC-4DD3-B5A9-D000506E1D94</a:ObjectID>
+<a:Name>直流量</a:Name>
+<a:Code>DC</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o115">
+<a:ObjectID>0923E44D-56B5-4BB9-85E0-B097696DDEF9</a:ObjectID>
+<a:Name>间隙电压</a:Name>
+<a:Code>GAP</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o116">
+<a:ObjectID>1E7B08C8-6D0E-43DF-8FB9-51835D0A40AC</a:ObjectID>
+<a:Name>转速</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o117">
+<a:ObjectID>0D0ED8D6-9E23-4A2A-A1BF-FD7625A308DA</a:ObjectID>
+<a:Name>波形</a:Name>
+<a:Code>WAVE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o118">
+<a:ObjectID>1A70FE05-067B-4D9D-B18A-9989D2952B6A</a:ObjectID>
+<a:Name>时间</a:Name>
+<a:Code>DATETIME</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o119">
+<a:ObjectID>9185C12B-86A7-4026-962C-54DB202AC6A8</a:ObjectID>
+<a:Name>采样频率</a:Name>
+<a:Code>SAMPLE_FREQ</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o120">
+<a:ObjectID>A62E583B-9E0F-4ACA-BF1A-B6CFD78619B4</a:ObjectID>
+<a:Name>采样点数</a:Name>
+<a:Code>SAMPLE_NUM</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o121">
+<a:ObjectID>CD744968-BB84-46BF-874F-06333F6112B8</a:ObjectID>
+<a:Name>报警类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160469217</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160470000</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o122">
+<a:ObjectID>E31EE8A2-1542-4B8B-8ED5-14DDDA708753</a:ObjectID>
+<a:Name>同步标志位</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1168494535</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494535</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o123">
+<a:ObjectID>D7D06C9D-EC08-46E7-8A91-4908C6040E1A</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160558902</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160558902</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o102"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:Indexes>
+<o:Index Id="o124">
+<a:ObjectID>CCBB3173-82FB-4E44-A4FF-8AFBF1333393</a:ObjectID>
+<a:Name>Ind_EVENT_ID</a:Name>
+<a:Code>Ind_EVENT_ID</a:Code>
+<a:CreationDate>1160470018</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160558899</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+</o:Index>
+</c:Indexes>
+<c:PrimaryKey>
+<o:Key Ref="o123"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o20">
+<a:ObjectID>8263ED91-A122-404A-8DD5-E09BF429ED00</a:ObjectID>
+<a:Name>报警事件日志表</a:Name>
+<a:Code>ALARM_LOG_$</a:Code>
+<a:CreationDate>1160468698</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160543679</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>$表示“公司别名”+“设备号”</a:Comment>
+<c:Columns>
+<o:Column Id="o125">
+<a:ObjectID>CDDAB124-E26B-42A7-8D2A-99F80EC42540</a:ObjectID>
+<a:Name>ID</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160543970</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o126">
+<a:ObjectID>696A01D5-0696-45F6-801E-4F3297DC41B7</a:ObjectID>
+<a:Name>报警测点或轴承位置</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160478731</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o127">
+<a:ObjectID>2735D98F-C5D6-4959-A327-50EA37E48996</a:ObjectID>
+<a:Name>报警开始时间</a:Name>
+<a:Code>START_T</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160478731</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o128">
+<a:ObjectID>8B492082-343C-4EBF-ADA0-83B1109809A9</a:ObjectID>
+<a:Name>报警结束时间</a:Name>
+<a:Code>END_T</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1162359234</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o129">
+<a:ObjectID>74E9AD0D-6F3D-4E43-87C3-57A21866B2B9</a:ObjectID>
+<a:Name>报警是否结束</a:Name>
+<a:Code>STOP_FLAG</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1162359234</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o130">
+<a:ObjectID>665F258B-23AE-4B85-93DC-F259F655324A</a:ObjectID>
+<a:Name>数据是否同步</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1162359234</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o131">
+<a:ObjectID>62E0AEBF-5C7B-4AA9-A1DC-940AE530A38F</a:ObjectID>
+<a:Name>报警事件类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1162359234</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o132">
+<a:ObjectID>810B8648-81E5-436C-95F5-00BE266D42D8</a:ObjectID>
+<a:Name>报警事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160478637</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160543856</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o133">
+<a:ObjectID>69076E35-2EFE-4809-997B-20B2C3BD9748</a:ObjectID>
+<a:Name>通道类型</a:Name>
+<a:Code>CHANN_TYPE</a:Code>
+<a:CreationDate>1160479325</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479325</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o134">
+<a:ObjectID>02D2CD61-D9AE-4DC3-BD0B-22E2DBB613AB</a:ObjectID>
+<a:Name>门限ID</a:Name>
+<a:Code>THRESH_ID</a:Code>
+<a:CreationDate>1160543679</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160543835</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+</o:Column>
+<o:Column Id="o135">
+<a:ObjectID>783B296A-211B-46BC-8A29-5473C1814AD3</a:ObjectID>
+<a:Name>报警结束后学习的门限ID</a:Name>
+<a:Code>THRESH_ID_NEW</a:Code>
+<a:CreationDate>1160543679</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160543835</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o136">
+<a:ObjectID>0E69E281-BCA9-4D70-8596-A6CF243F5574</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160478731</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160478847</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o125"/>
+<o:Column Ref="o132"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o136"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o22">
+<a:ObjectID>44E63EE2-C28F-4D77-AC6B-5FFF0C3910E5</a:ObjectID>
+<a:Name>过程量报警数据表</a:Name>
+<a:Code>Alarm_Proc_$</a:Code>
+<a:CreationDate>1160468699</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494369</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o137">
+<a:ObjectID>92CC3F0F-6626-4168-B2CB-74DD3F46013F</a:ObjectID>
+<a:Name>事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160544070</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o138">
+<a:ObjectID>2F4620BF-8CAA-4760-97B2-E0EE04B8EEF3</a:ObjectID>
+<a:Name>测点名</a:Name>
+<a:Code>CHANNID</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619945</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o139">
+<a:ObjectID>AB89381F-7CAB-4812-9BEB-CE4887D1D63F</a:ObjectID>
+<a:Name>测点类型</a:Name>
+<a:Code>CHANN_TYPE</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480083</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o140">
+<a:ObjectID>B901C705-CBE7-4007-BBA5-DDA9AA20D87C</a:ObjectID>
+<a:Name>数据</a:Name>
+<a:Code>PROCVALUE</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480083</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o141">
+<a:ObjectID>A5930927-4C63-4394-9BA5-537F33D2DDD1</a:ObjectID>
+<a:Name>时间</a:Name>
+<a:Code>datetime</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480083</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o142">
+<a:ObjectID>34D9988A-BCD1-410C-A205-6E3BC6EFA49E</a:ObjectID>
+<a:Name>报警类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160559065</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160559065</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o143">
+<a:ObjectID>B9C29E9C-37B8-4F60-B9AA-21031EA5A7AD</a:ObjectID>
+<a:Name>同步标志位</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1168494369</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494369</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o144">
+<a:ObjectID>89639E11-D072-483D-8A32-1E9618899003</a:ObjectID>
+<a:Name>转速</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160480073</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480083</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o145">
+<a:ObjectID>B8BAC7B9-7B70-4774-8281-807747E6D528</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160480083</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480083</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o137"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o145"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o24">
+<a:ObjectID>22BD05C5-3EA6-4F68-B541-E32CC3CF7BB9</a:ObjectID>
+<a:Name>趋势报警表</a:Name>
+<a:Code>Alarm_Trend_$</a:Code>
+<a:CreationDate>1160468699</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160624868</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o146">
+<a:ObjectID>0B11E277-4CCE-4EFE-8C5B-43E6442420FE</a:ObjectID>
+<a:Name>事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160480473</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562199</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o147">
+<a:ObjectID>30846644-0918-478B-97A2-DEE6C4B5AE8D</a:ObjectID>
+<a:Name>测点</a:Name>
+<a:Code>channid</a:Code>
+<a:CreationDate>1160480473</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619940</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o148">
+<a:ObjectID>D3D45D57-8F60-4FD2-87FA-E77AB756984B</a:ObjectID>
+<a:Name>测点类型</a:Name>
+<a:Code>chann_type</a:Code>
+<a:CreationDate>1160562416</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562425</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o149">
+<a:ObjectID>F0FA9A0D-1A44-4A66-94D6-C56E30E0AC3A</a:ObjectID>
+<a:Name>趋势报警状态</a:Name>
+<a:Code>type</a:Code>
+<a:CreationDate>1160480473</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1162811651</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o150">
+<a:ObjectID>D1555AA8-6479-44D7-B3BB-9607C910CB72</a:ObjectID>
+<a:Name>时间</a:Name>
+<a:Code>datetime</a:Code>
+<a:CreationDate>1160562294</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562294</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o151">
+<a:ObjectID>D555B37F-89B4-40FF-A3BA-78F615B15568</a:ObjectID>
+<a:Name>判断使用数据长度</a:Name>
+<a:Code>data_len</a:Code>
+<a:CreationDate>1160480520</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480520</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o152">
+<a:ObjectID>D1C290B9-3D2F-414F-B93D-09457D14C64A</a:ObjectID>
+<a:Name>判断使用的数据</a:Name>
+<a:Code>data</a:Code>
+<a:CreationDate>1160480473</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160480473</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o153">
+<a:ObjectID>57679360-A2F9-4B48-8159-6E93E9E01947</a:ObjectID>
+<a:Name>趋势判断门限</a:Name>
+<a:Code>threshold</a:Code>
+<a:CreationDate>1160480473</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160544659</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>做趋势判断时，使用的一些参数。保存的是一个结构体</a:Comment>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o154">
+<a:ObjectID>54CD503E-E65D-4518-A7B0-93994BFF301A</a:ObjectID>
+<a:Name>门限结构体长度</a:Name>
+<a:Code>threshold_size</a:Code>
+<a:CreationDate>1160544700</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160544700</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o155">
+<a:ObjectID>906AC437-BB31-4B07-820D-830CDD47E399</a:ObjectID>
+<a:Name>趋势判断类别</a:Name>
+<a:Code>TREND_TYPE</a:Code>
+<a:CreationDate>1160544450</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160544580</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>这个趋势报警事件是什么类型趋势报警判断触发：hour,day,month,season</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o156">
+<a:ObjectID>1370620E-B34A-4CE8-8161-70C55866935B</a:ObjectID>
+<a:Name>同步标识</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1160545103</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545103</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o157">
+<a:ObjectID>CE0C3473-B4B9-469F-892C-ACF99D3254F1</a:ObjectID>
+<a:Name>转速</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160562381</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562381</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o158">
+<a:ObjectID>E29D4763-AC1C-4E45-906D-19994FEE9A95</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160562199</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562199</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o146"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:Indexes>
+<o:Index Id="o159">
+<a:ObjectID>D3B48633-0CF1-4731-B2F9-4C805A81AE98</a:ObjectID>
+<a:Name>Index_1</a:Name>
+<a:Code>Index_1</a:Code>
+<a:CreationDate>1160624868</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160624882</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:IndexColumns>
+<o:IndexColumn Id="o160">
+<a:ObjectID>39A7DA4F-5F72-45FE-B0CB-8ED7DFB4CBD9</a:ObjectID>
+<a:CreationDate>1160624882</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160624882</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Column>
+<o:Column Ref="o147"/>
+</c:Column>
+</o:IndexColumn>
+</c:IndexColumns>
+</o:Index>
+</c:Indexes>
+<c:PrimaryKey>
+<o:Key Ref="o158"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o26">
+<a:ObjectID>8BA9879E-CEBA-4426-9407-BBC6D1752422</a:ObjectID>
+<a:Name>自学习门限表</a:Name>
+<a:Code>threshold_$</a:Code>
+<a:CreationDate>1160468700</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163076047</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:Comment>保存每次门限的学习后值和学习时间</a:Comment>
+<c:Columns>
+<o:Column Id="o161">
+<a:ObjectID>7D040644-FBF7-497F-86C4-1F842D15E16F</a:ObjectID>
+<a:Name>ID</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481048</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o162">
+<a:ObjectID>01972DAC-D35E-406C-B5A5-4FC578363457</a:ObjectID>
+<a:Name>门限ID</a:Name>
+<a:Code>THRESHOLD_ID</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481048</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o163">
+<a:ObjectID>F705945B-417C-4A70-AB87-1BB07DA6BBE4</a:ObjectID>
+<a:Name>测点名称或轴承位置</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481044</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o164">
+<a:ObjectID>66D761CE-F8CA-47F9-9C66-B20976F170BA</a:ObjectID>
+<a:Name>通道类型</a:Name>
+<a:Code>chann_type</a:Code>
+<a:CreationDate>1163076047</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1163076047</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o165">
+<a:ObjectID>FE192E90-346B-4BF6-9993-DC0B65032E44</a:ObjectID>
+<a:Name>开始时间</a:Name>
+<a:Code>START_T</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481044</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o166">
+<a:ObjectID>4D102C04-C444-4DAB-86D2-C27C756DB468</a:ObjectID>
+<a:Name>结束时间</a:Name>
+<a:Code>END_T</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481044</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o167">
+<a:ObjectID>3C9A7C70-B2A4-4C42-ADA1-FF7F16EA44B8</a:ObjectID>
+<a:Name>自学习触发类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163077002</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:Comment>什么事件触发学习门限参数</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o168">
+<a:ObjectID>7DFE205D-BB3F-4D01-99B0-F64B82BEB7DD</a:ObjectID>
+<a:Name>学习数据</a:Name>
+<a:Code>data</a:Code>
+<a:CreationDate>1160480918</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160534648</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o169">
+<a:ObjectID>5CA6BE55-6A10-4BD3-A8F2-EE380B141CD4</a:ObjectID>
+<a:Name>学习数据长度</a:Name>
+<a:Code>data_len</a:Code>
+<a:CreationDate>1160480983</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160534648</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o170">
+<a:ObjectID>226A06D8-005C-4629-BB3C-B570CE00A0F2</a:ObjectID>
+<a:Name>门限参数结构体</a:Name>
+<a:Code>THRESHOLD</a:Code>
+<a:CreationDate>1160534648</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160535218</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o171">
+<a:ObjectID>A3784655-7F71-40D6-B1EB-DD1B1A8718F4</a:ObjectID>
+<a:Name>门限参数结构体长度</a:Name>
+<a:Code>THRESHOLD_SIZE</a:Code>
+<a:CreationDate>1160534648</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163035572</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o172">
+<a:ObjectID>3EF4963F-F433-42B1-97E4-D28E42DF8395</a:ObjectID>
+<a:Name>同步标识</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1163035316</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163035316</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o173">
+<a:ObjectID>D3C067C7-0A7B-49F9-8FBA-D65539BF0933</a:ObjectID>
+<a:Name>门限学习参数</a:Name>
+<a:Code>LEARN_PARAM</a:Code>
+<a:CreationDate>1163073850</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1163073850</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+<o:Column Id="o174">
+<a:ObjectID>AB23EE23-F8BE-4EEC-86A5-9F54A6DA3BD3</a:ObjectID>
+<a:Name>门限学习参数尺寸</a:Name>
+<a:Code>LEARN_PARAM_SIZE</a:Code>
+<a:CreationDate>1163073850</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1163073911</a:ModificationDate>
+<a:Modifier>Administrator</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o175">
+<a:ObjectID>33F65FA6-9064-427E-A80E-ECC2D22259EF</a:ObjectID>
+<a:Name>用于判断报警的类型</a:Name>
+<a:Code>ALARM_TYPE</a:Code>
+<a:CreationDate>1163073911</a:CreationDate>
+<a:Creator>Administrator</a:Creator>
+<a:ModificationDate>1166664291</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>这个门限是用于判断何种报警
+</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o176">
+<a:ObjectID>C9A1BEFE-A0C9-4772-AFC5-A86D75F3A44A</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160481048</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160481048</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o161"/>
+<o:Column Ref="o162"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o176"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o28">
+<a:ObjectID>F261A14B-0681-40BF-839E-6617E3B72710</a:ObjectID>
+<a:Name>轴心位置报警表</a:Name>
+<a:Code>Alarm_AXIS_$</a:Code>
+<a:CreationDate>1160468700</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494502</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o177">
+<a:ObjectID>E7448DC7-17DD-46C3-A7F9-421B04826B38</a:ObjectID>
+<a:Name>事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160549178</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o178">
+<a:ObjectID>7D7515B2-6E60-4DE6-A8D9-71476308E152</a:ObjectID>
+<a:Name>名字</a:Name>
+<a:Code>name</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160559241</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o179">
+<a:ObjectID>3ACFE7A2-FDE5-400D-904F-59DBFDE6DB4A</a:ObjectID>
+<a:Name>X坐标</a:Name>
+<a:Code>COOR_X</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o180">
+<a:ObjectID>C66B841E-D255-42FA-B921-2A652C1CF42D</a:ObjectID>
+<a:Name>Y坐标</a:Name>
+<a:Code>COOR_Y</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o181">
+<a:ObjectID>3E807F60-DFB5-45F0-A6C4-EBAAA6B96847</a:ObjectID>
+<a:Name>时间</a:Name>
+<a:Code>datetime</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o182">
+<a:ObjectID>686992DE-F3EC-4B37-AAD8-361D9A4BB991</a:ObjectID>
+<a:Name>转速</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o183">
+<a:ObjectID>59ED6A37-4C2F-46A5-B898-7DD35FAED155</a:ObjectID>
+<a:Name>X直流量</a:Name>
+<a:Code>DC_X</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o184">
+<a:ObjectID>1BFB9FFE-111C-4B45-B822-57B56AA454A1</a:ObjectID>
+<a:Name>X间隙电压</a:Name>
+<a:Code>GAP_X</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o185">
+<a:ObjectID>D67AC383-65A1-4859-8AB9-6D32B48D558F</a:ObjectID>
+<a:Name>Y直流量</a:Name>
+<a:Code>DC_Y</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o186">
+<a:ObjectID>8881D53B-BF29-4616-BFC6-7C70BC1F18FA</a:ObjectID>
+<a:Name>Y间隙电压</a:Name>
+<a:Code>GAP_Y</a:Code>
+<a:CreationDate>1160479137</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160479149</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o187">
+<a:ObjectID>B7A31896-5150-471D-9918-E8ABB2F79FF3</a:ObjectID>
+<a:Name>报警类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160562022</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562022</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o188">
+<a:ObjectID>2F9BBE64-F082-4313-AEFE-E5DF1AF0DFE0</a:ObjectID>
+<a:Name>同步标志位</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1168494502</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494502</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o189">
+<a:ObjectID>4CEDC9EE-F718-45FA-8764-450054E3DED5</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160479149</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160559218</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o177"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o189"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o30">
+<a:ObjectID>1F4AAA15-C160-4F01-BCC7-45FEFF24F5DB</a:ObjectID>
+<a:Name>通道表</a:Name>
+<a:Code>channel</a:Code>
+<a:CreationDate>1160029140</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160645549</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o190">
+<a:ObjectID>741E8094-67EF-4EE6-954B-860A364799EE</a:ObjectID>
+<a:Name>ID</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160029931</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029931</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o191">
+<a:ObjectID>79FE9794-501C-4276-A45D-E5D7F8A1F23A</a:ObjectID>
+<a:Name>公司名</a:Name>
+<a:Code>COMPANY</a:Code>
+<a:CreationDate>1160029931</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o192">
+<a:ObjectID>37323B0D-2BCF-40A0-92AB-F6997E1F4AE9</a:ObjectID>
+<a:Name>分厂名</a:Name>
+<a:Code>FACTORY_NAME</a:Code>
+<a:CreationDate>1160029931</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o193">
+<a:ObjectID>7321D08B-7160-4DD0-BA88-02B2E7C2B6CB</a:ObjectID>
+<a:Name>设备号</a:Name>
+<a:Code>PLANTID</a:Code>
+<a:CreationDate>1160029931</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619915</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o194">
+<a:ObjectID>92B4CF0C-253E-4B83-834E-6A6082B62909</a:ObjectID>
+<a:Name>通道号</a:Name>
+<a:Code>CHANNID</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619915</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(50)</a:DataType>
+<a:Length>50</a:Length>
+</o:Column>
+<o:Column Id="o195">
+<a:ObjectID>6C44C544-08B1-4DA2-8538-B42B74E36AD4</a:ObjectID>
+<a:Name>通道别名</a:Name>
+<a:Code>CHANNID_ALIAS</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1176619915</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(100)</a:DataType>
+<a:Length>100</a:Length>
+</o:Column>
+<o:Column Id="o196">
+<a:ObjectID>ECB5CDFE-BDEE-4C65-A51C-4F3B786DEA46</a:ObjectID>
+<a:Name>通道类型</a:Name>
+<a:Code>CHANN_TYPE</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o197">
+<a:ObjectID>BAAEC3AA-6A4A-4DDA-9160-9294E92A0EAF</a:ObjectID>
+<a:Name>传感器类型</a:Name>
+<a:Code>SENSOR_TYPE</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o198">
+<a:ObjectID>D111F496-E04F-40CD-968D-BC0389E0D05B</a:ObjectID>
+<a:Name>所属转速</a:Name>
+<a:Code>REVTYPE</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o199">
+<a:ObjectID>8918BAC1-D2EA-467F-A4C9-4D5B518AA85A</a:ObjectID>
+<a:Name>所属列表</a:Name>
+<a:Code>LIST</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031382</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o200">
+<a:ObjectID>8E6D6D96-86F3-470A-967A-BF99514716EF</a:ObjectID>
+<a:Name>单位</a:Name>
+<a:Code>UNIT</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031447</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>char(20)</a:DataType>
+<a:Length>20</a:Length>
+</o:Column>
+<o:Column Id="o201">
+<a:ObjectID>8D3D714D-EDD9-445C-8E88-BCB5BEEEAEDB</a:ObjectID>
+<a:Name>灵敏度</a:Name>
+<a:Code>SENSITIVITY</a:Code>
+<a:CreationDate>1160031275</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160031447</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o202">
+<a:ObjectID>14011AAA-618A-49A4-B44F-DDAC353B18BA</a:ObjectID>
+<a:Name>是否存在键相</a:Name>
+<a:Code>KEY_IF</a:Code>
+<a:CreationDate>1160534097</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160534409</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o203">
+<a:ObjectID>66D64D5B-AAC4-451C-9843-1BA895F40A51</a:ObjectID>
+<a:Name>报警相关参数</a:Name>
+<a:Code>ALARM_PARAM</a:Code>
+<a:CreationDate>1160534097</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160534409</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>image</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o204">
+<a:ObjectID>C770D579-DBAF-4155-B933-00AF2E47CE9F</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160029931</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160029931</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o190"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o204"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o32">
+<a:ObjectID>D76AEF89-3018-4AE1-8ED0-4AD1D0B9608E</a:ObjectID>
+<a:Name>开停车事件表</a:Name>
+<a:Code>SUD_LOG_$</a:Code>
+<a:CreationDate>1160545230</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160562977</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Columns>
+<o:Column Id="o205">
+<a:ObjectID>2A190DC1-6A54-4A8E-8CC3-E40252C88020</a:ObjectID>
+<a:Name>ID</a:Name>
+<a:Code>ID</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545584</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+</o:Column>
+<o:Column Id="o206">
+<a:ObjectID>D5A924A3-8302-450C-BD56-90DB64545905</a:ObjectID>
+<a:Name>开停车事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545584</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+<a:Mandatory>1</a:Mandatory>
+</o:Column>
+<o:Column Id="o207">
+<a:ObjectID>1BBD2558-1E44-4959-956F-FC4BA42242FA</a:ObjectID>
+<a:Name>开始时间</a:Name>
+<a:Code>START_T</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163679677</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>开停车的开始时间</a:Comment>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o208">
+<a:ObjectID>D2F92D8B-07B5-40C5-9861-A43DD286B86A</a:ObjectID>
+<a:Name>结束时间</a:Name>
+<a:Code>END_T</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545771</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>开停车的结束时间</a:Comment>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o209">
+<a:ObjectID>62467EBB-0B73-4857-8C0D-6A1CBC066C55</a:ObjectID>
+<a:Name>开停车类型</a:Name>
+<a:Code>TYPE</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163679369</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>开停车类型有两类：开车和停车，开车为0，停车为2</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o210">
+<a:ObjectID>B96A5DA7-F222-49F2-9CB0-49A16A36D15D</a:ObjectID>
+<a:Name>是否结束</a:Name>
+<a:Code>STOP_FLAG</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1163679778</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>标示开停车过程有没有结束</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o211">
+<a:ObjectID>A4C3C68D-6FC7-4D36-ACD9-7C6253621303</a:ObjectID>
+<a:Name>是否同步</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545932</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>是否向这台服务器的父级同步了这条记录和相关数据</a:Comment>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+<c:Keys>
+<o:Key Id="o212">
+<a:ObjectID>191F9F29-7055-42F4-9D3A-FEAA86190C74</a:ObjectID>
+<a:Name>Key_1</a:Name>
+<a:Code>Key_1</a:Code>
+<a:CreationDate>1160545584</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160545584</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<c:Key.Columns>
+<o:Column Ref="o206"/>
+</c:Key.Columns>
+</o:Key>
+</c:Keys>
+<c:PrimaryKey>
+<o:Key Ref="o212"/>
+</c:PrimaryKey>
+</o:Table>
+<o:Table Id="o34">
+<a:ObjectID>43575F82-3D9A-4B83-8EE3-58F9B2929197</a:ObjectID>
+<a:Name>SUD_$</a:Name>
+<a:Code>SUD_$</a:Code>
+<a:CreationDate>1160545231</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494189</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:Comment>开停车数据表，结构和振动趋势表一样</a:Comment>
+<c:Columns>
+<o:Column Id="o213">
+<a:ObjectID>DB3DE10E-D036-4615-97E5-82C71F1700D7</a:ObjectID>
+<a:Name>事件ID</a:Name>
+<a:Code>EVENT_ID</a:Code>
+<a:CreationDate>1160546723</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160546723</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>bigint</a:DataType>
+</o:Column>
+<o:Column Id="o214">
+<a:ObjectID>1C658182-1F7D-4500-8E36-8F2B73F17C32</a:ObjectID>
+<a:Name>时间</a:Name>
+<a:Code>datetime</a:Code>
+<a:CreationDate>1160546723</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160547722</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>datetime</a:DataType>
+</o:Column>
+<o:Column Id="o215">
+<a:ObjectID>8CB4D9E7-6C00-4CA4-8BA8-E8E6AB0E22D8</a:ObjectID>
+<a:Name>采样频率</a:Name>
+<a:Code>SAMPLE_FREQ</a:Code>
+<a:CreationDate>1160563025</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160563025</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o216">
+<a:ObjectID>504F3934-E2FC-43C5-86A2-95E7874165BF</a:ObjectID>
+<a:Name>采样点数</a:Name>
+<a:Code>SAMPLE_NUM</a:Code>
+<a:CreationDate>1160563025</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160563025</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+<o:Column Id="o217">
+<a:ObjectID>F69F1549-EC0F-4BE0-9D21-657F2C56D142</a:ObjectID>
+<a:Name>转速1</a:Name>
+<a:Code>REV</a:Code>
+<a:CreationDate>1160563025</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160563589</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o218">
+<a:ObjectID>7643BD11-4038-4687-82F3-B0FAFD4650E7</a:ObjectID>
+<a:Name>转速2</a:Name>
+<a:Code>REV2</a:Code>
+<a:CreationDate>1160563025</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160563589</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>real</a:DataType>
+</o:Column>
+<o:Column Id="o219">
+<a:ObjectID>0D0440B9-D8D5-4EF1-B211-853CE98CCB6A</a:ObjectID>
+<a:Name>同步标志位</a:Name>
+<a:Code>SYN_FLAG</a:Code>
+<a:CreationDate>1168494189</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1168494189</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:DataType>int</a:DataType>
+</o:Column>
+</c:Columns>
+</o:Table>
+</c:Tables>
+<c:DefaultGroups>
+<o:Group Id="o220">
+<a:ObjectID>28427F3F-FF7C-4254-AF45-6888475F6E9C</a:ObjectID>
+<a:Name>PUBLIC</a:Name>
+<a:Code>PUBLIC</a:Code>
+<a:CreationDate>1160027324</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160027324</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+</o:Group>
+</c:DefaultGroups>
+<c:TargetModels>
+<o:TargetModel Id="o221">
+<a:ObjectID>29AF038C-765F-4986-9D64-07462E691D90</a:ObjectID>
+<a:Name>Microsoft SQL Server 2000</a:Name>
+<a:Code>MSSQLSRV2000</a:Code>
+<a:CreationDate>1160027340</a:CreationDate>
+<a:Creator>marble</a:Creator>
+<a:ModificationDate>1160027340</a:ModificationDate>
+<a:Modifier>marble</a:Modifier>
+<a:TargetModelURL>file:///%_DBMS%/sqlsrv2k.xdb</a:TargetModelURL>
+<a:TargetModelID>E2B854D3-FF56-485F-BEF3-98AEC7E65DDC</a:TargetModelID>
+<a:TargetModelClassID>4BA9F647-DAB1-11D1-9944-006097355D9B</a:TargetModelClassID>
+<c:SessionShortcuts>
+<o:Shortcut Ref="o3"/>
+</c:SessionShortcuts>
+</o:TargetModel>
+</c:TargetModels>
+</o:Model>
+</c:Children>
+</o:RootObject>
+
+</Model>

@@ -1,0 +1,7 @@
+; S_ExpertSysSvr.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S_ExpertSysSvr"
+DESCRIPTION  'Apex Service DLL'
+
+EXPORTS
+    Service

@@ -1,0 +1,8 @@
+; S_CaseLibrary.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S_CaseLibrary"
+
+EXPORTS
+      Service @1
+      Do      @2
+      

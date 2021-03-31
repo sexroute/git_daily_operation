@@ -1,0 +1,10 @@
+[INFO]下的"PROCESSNUMS="后面的数字表示监测几个进程
+[PROCESS0]表示进程0的信息，
+          "APPNAME="后面字符串表示应用程序的名字，切记只需要写名字，不需要写完整目录；
+          “MONITORFILE=”后面字符串表示监测的文件名称，要完整路径，这个程序“E:\remote monitoring system\BHKDDAQ1000beta3102J[仿真发数版]\SampleLib”\SendDataAssistant.log，引号中间为发送助手的路径
+          “DIFFMINITUTE=”后面的数字表示多少分钟不变化，就关掉这个进程。
+如果需要监测多个进程，怎依次写下去
+[PROCESS1]...[PROCESSn]
+
+
+一定注意应用程序的大小写，必须一致。

@@ -1,0 +1,49 @@
+命名约定：
+1、数据采集程序为DAQ，发送助手为SH
+2、需要建立3个连接：Read1,WriteAuto,WriteManu
+   Read1：用于消息验证，对于DAQ为只读，对于SH为只写；
+   WriteAuto：用于正常工况数据发送、启停车标志位和报警标志位发送。对于DAQ为无条件写，对于SH为自动读；
+   WriteManu：用于启停车数据和报警数据发送。对于DAQ是有条件写，对于SH为有条件读。条件的判断需要借助于Read1和WriteAuto的结果；
+3、各个属性名前面的“PLANT”为实际设备号。
+
+协议说明：
+
+1、WriteAuto：除了正常发送数据及其对应的设备标识信息外，需要添加启停车的状态（PLANT_SUD_STATUS：bool）、启停车的开始时间（PLANT_SUD_STARTTIME：datetime）
+   双方操作：
+   （1）DAQ：
+    a、条件：当判断为启停车状态时
+       动作：把PLANT_SUD_STATUS置为true，把PLANT_SUD_STARTTIME置为启停车的开始时间；
+    b、条件：判断为非启停车状态时
+       动作：把PLANT_SUD_STATUS置为false，PLANT_SUD_STARTTIME可以不改变；
+       注意：在启停车过程中，不能改变PLANT_SUD_STARTTIME。
+   （2）SH操作：当读到PLANT_SUD_STATUS为true时，并且当前设备的启停车事件ID为-1，则读取PLANT_SUD_STARTTIME，发送到中间件请求当前启停车的事件ID和建立该启停车的日志；如果启停车事件ID为大于0的数，则从WriteManu读取启停车数据，并发送到实时中间件模块。
+
+2、Read1:用于判断是否需要写启停车数据或报警数据的条件判断。需要添加启停车数据的时间（PLANT_SUD_DATATIME：datetime）和启停车时间事件ID（PLANT_SUD_EVENTID：int）
+   双方操作：
+   1）SH：
+   动作：设置为PLANT_SUD_DATATIME为当前数据的时间，设置PLANT_SUD_EVENTID为当前启停车的事件ID。
+   2）DAQ:
+   a、条件：当PLANT_SUD_EVENTID为大于0时，并且PLANT_SUD_DATATIME和上次发送的数据时间相同；
+      动作：用WriteManu进行新一次数据发送。
+   b、条件：PLANT_SUD_EVENTID为大于0，并且PLANT_SUD_DATATIME和上次发送数据时间不同；
+      动作：不发送任何数据。
+   c、条件：PLANT_SUD_EVENTID为小于0时；
+      动作：不发送任何数据。
+
+3、WriteManu:用于发送启停车数据和报警数据,有条件发送.除了发送启停车数据需要的信息外，添加发送数据的时间PLANT_SUD_DATATIME，启停车事件PLANT_SUD_EVENTID，启停车类型：PLANT_SUD_TYPE（枚举整型）,启停车数据发送完毕结束标志为PLANT_SUD_STOP（布尔型），启停车数据结束的时间PLANT_SUD_ENDTIME（时间类型）
+   1）DAQ
+   a、条件：SUD数据队列中有数据,PLANT_SUD_EVENTID大于0，上一次读取的PLANT_SUD_EVENTID小于0。
+      动作：开始发送SUD数据、PLANT_SUD_EVENTID、PLANT_SUD_DATATIME、PLANT_SUD_TYPE、PLANT_SUD_STOP为false。
+   b、条件：启停车数据队列中有数据,PLANT_SUD_EVENTID大于0，上一次读取的PLANT_SUD_EVENTID大于0，并且上次这个连接发送数据PLANT_SUD_DATETIME和在Read1连接上读取的PLANT_SUD_DATETIME相同。
+      动作：开始发送SUD数据、PLANT_SUD_EVENTID、PLANT_SUD_DATATIME、PLANT_SUD_TYPE、PLANT_SUD_STOP为false。
+   c、条件：当队列中无数据，PLANT_SUD_EVENTID大于0，上一次读取的PLANT_SUD_EVENTID大于0，并且上次这个连接发送数据PLANT_SUD_DATETIME和在Read1连接上读取的PLANT_SUD_DATETIME相同。
+      动作：PLANT_SUD_EVENTID、PLANT_SUD_DATATIME、PLANT_SUD_TYPE（很重要，因为启停车日志的启停车类型就是按照这个值记录）、PLANT_SUD_STOP为true、PLANT_SUD_ENDTIME（很重要，因为启停车日志的启停车结束时间就是按照这个值记录）。
+   d、条件：当队列中无数据，PLANT_SUD_EVENTID为-1
+      动作：PLANT_SUD_EVENTID为-1
+   2）SH
+   a、条件：当前设备处于启停车状态，PLANT_SUD_EVENTID大于1，PLANT_SUD_STOP为false。
+      动作：读取数据，发送到实时中间件模块。
+   b、条件：当前设备处于非启停车状态，PLANT_SUD_EVENTID大于1，PLANT_SUD_STOP为false。
+      动作：读取数据，发送到历史中间件模块。
+   c、条件：PLANT_SUD_EVENTID大于1，PLANT_SUD_STOP为true
+      动作：读取PLANT_SUD_DATATIME、PLANT_SUD_TYPE，并发送信息到历史中间件模块，确定补充完整当前启停车事件的日志，并设备当前设备启停车事件ID为-1。

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="VersionInfo" default="versioninfo">
+
+<!-- ====================================================================== -->
+<!-- User Customized Configuration                                          -->
+<!-- ====================================================================== -->
+	<include buildfile="configure.user" />
+
+<!-- ====================================================================== -->
+<!-- Configuration global                                                   -->
+<!-- ====================================================================== -->
+	<!-- solution -->
+	<if test="${not property::exists('bh.solution')}">
+		<fail message="No Visual C++ solution file specified!" />
+	</if>
+
+	<!-- versionfile -->
+	<if test="${not property::exists('bh.version.def')}">
+		<fail message="No version file specified!" />
+	</if>
+
+	<!-- versions -->
+	<if test="${not property::exists('bh.version.file.major')}">
+		<fail message="File's Major version not specified!" />
+	</if>
+	<if test="${not property::exists('bh.version.file.minor')}">
+		<fail message="File's Minor version not specified!" />
+	</if>
+	<if test="${not property::exists('bh.version.file.micro')}">
+		<fail message="File's Micro version not specified!" />
+	</if>
+
+	<if test="${not property::exists('bh.version.product.major')}">
+		<fail message="Product's Major version not specified!" />
+	</if>
+	<if test="${not property::exists('bh.version.product.minor')}">
+		<fail message="Product's Minor version not specified!" />
+	</if>
+	<if test="${not property::exists('bh.version.product.micro')}">
+		<fail message="Product's Micro version not specified!" />
+	</if>
+
+	<!-- executing logging -->
+	<if test="${not property::exists('bh.verbose')}">
+		<property name="bh.verbose" value="false" />
+	</if>
+
+	<!-- tool-chain -->
+	<if test="${not property::exists('SubWCRevFileName')}">
+		<property name="SubWCRevFileName" value="SubWCRev.exe"/>
+	</if>
+
+	<if test="${not property::exists('bh.cleanup')}">
+		<property name="bh.cleanup" value="yes" />
+	</if>
+
+<!-- ====================================================================== -->
+<!-- Configuration verbose mode                                             -->
+<!-- ====================================================================== -->
+	<target name="verbose">
+		<description>
+			Sets the verbose debug mode.
+		</description>
+		<property name="bh.verbose" value="true" />
+	</target>
+
+<!-- ====================================================================== -->
+<!-- Configuration debug / release                                          -->
+<!-- ====================================================================== -->
+	<target name="debug">
+		<description>
+			Sets the environment up to build the debug versions.
+		</description>
+		<property name="bh.configuration" value="debug" />
+		<property name="solution" value="${bh.solution}" />
+	</target>
+
+	<target name="release">
+		<description>
+			Sets the environment up to build the release versions.
+		</description>
+		<property name="bh.configuration" value="release" />
+		<property name="solution" value="${bh.solution}" />
+	</target>
+
+
+<!-- ====================================================================== -->
+<!-- Configuration clean                                                    -->
+<!-- ====================================================================== -->
+	<target name="clean">
+		<description>
+			Cleans previous built files.
+		</description>
+
+		<if test="${bh.cleanup == 'true'}">
+			<exec program="devenv.com" workingdir=".">
+				<arg value="${bh.solution}" />
+				<arg value="/nologo" />
+				<arg value="/clean" />
+				<arg value="${bh.configuration}" />
+			</exec>
+		</if>
+	</target>
+
+<!-- ====================================================================== -->
+<!-- Configuration build                                                    -->
+<!-- ====================================================================== -->
+	<target name="build">
+		<exec program="devenv.com" workingdir=".">
+			<arg value="${bh.solution}" />
+			<arg value="/nologo" />
+			<arg value="/build" />
+			<arg value="${bh.configuration}" />
+		</exec>
+	</target>
+
+<!-- ====================================================================== -->
+<!-- Configuration rebuild                                                  -->
+<!-- ====================================================================== -->
+	<target name="rebuild" depends="clean, build" />
+
+<!-- ====================================================================== -->
+<!-- Configuration solution                                                 -->
+<!-- ====================================================================== -->
+	<target name="solution">
+		<solution configuration="${bh.configuration}" solutionfile="${bh.solution}" />
+	</target>
+
+<!-- ====================================================================== -->
+<!-- Update version                                                         -->
+<!-- ====================================================================== -->
+<target name="version" depends="fetch_file_version, fetch_product_version">
+		<foreach item="File" property="filename">
+			<in>
+				<items refid="bh.rcfiles" />
+			</in>
+			<do>
+				<echo message="${filename}" />
+				<exec program="bash" workingdir=".">
+				<arg value="-i" />
+				<arg value="${bh.version.script}" />
+				<arg value="${filename}" />
+				<arg value="${BH5000_FILE_MAJOR_VERSION}" />
+				<arg value="${BH5000_FILE_MINOR_VERSION}" />
+				<arg value="${BH5000_FILE_MICRO_VERSION}" />
+				<arg value="${BH5000_PRODUCT_MAJOR_VERSION}" />
+				<arg value="${BH5000_PRODUCT_MINOR_VERSION}" />
+				<arg value="${BH5000_PRODUCT_MICRO_VERSION}" />
+				<arg value="${BH5000_PRODUCT_PACKAGE_VERSION}" />	
+				</exec>
+			</do>
+		</foreach>
+	</target>
+
+<!-- ====================================================================== -->
+<!-- doxygen                                                                -->
+<!-- ====================================================================== -->
+	<target name="doc">
+		<exec program="doxygen" workingdir=".">
+		</exec>
+	</target>
+
+<!-- ====================================================================== -->
+<!-- Configuration run                                                      -->
+<!-- ====================================================================== -->
+	<target name="run">
+		<!-- debug env -->
+		<if test="${not property::exists('bh.debug.exe.dir')}">
+			<fail message="Debug Directory not specified!" />
+		</if>
+
+		<!-- release env -->
+		<if test="${not property::exists('bh.release.exe.dir')}">
+			<fail message="Release Directory not specified!" />
+		</if>
+
+		<if test="${not property::exists('bh.exe.name')}">
+			<fail message="Application' name not specified!" />
+		</if>
+
+		<if test="${bh.configuration=='release'}">
+			<exec program="cmd" workingdir="${bh.release.exe.dir}" >
+				<arg value="/k" />
+				<arg value="${bh.exe.name}" />
+			</exec>
+		</if>
+		<if test="${bh.configuration=='debug'}">
+			<exec program="cmd" workingdir="${bh.debug.exe.dir}" >
+				<arg value="/k" />
+				<arg value="${bh.exe.name}" />
+			</exec>
+		</if>
+	</target>
+
+<!-- ====================================================================== -->
+<!-- tag                                                                    -->
+<!-- ====================================================================== -->
+	<target name="tag">
+		<!-- debug env -->
+		<if test="${not property::exists('bh.debug.exe.dir')}">
+			<fail message="Debug Directory not specified!" />
+		</if>
+
+		<!-- release env -->
+		<if test="${not property::exists('bh.release.exe.dir')}">
+			<fail message="Release Directory not specified!" />
+		</if>
+
+		<!-- application name -->
+		<if test="${not property::exists('bh.exe.name')}">
+			<fail message="Application' name not specified!" />
+		</if>
+
+		<if test="${bh.configuration=='release'}">
+			<property name="bin.dir" value="${bh.release.exe.dir}" />
+		</if>
+		<if test="${bh.configuration=='debug'}">
+			<property name="bin.dir" value="${bh.debug.exe.dir}" />
+		</if>
+
+		<!--
+		<if test="${not file::exists("${bin.dir}/${bh.exe.name}")}">
+			<fail message="Application' name not exist!" />
+		</if>
+		-->
+
+		<echo message="tagging ${bin.dir}/${bh.exe.name} ..." />
+
+		<exec program="bash" workingdir="." >
+			<arg value="tools/copy-with-version.sh" />
+			<arg value="${bin.dir}/${bh.exe.name}" />
+		</exec>
+	</target>
+
+	<target name="fetch_file_version">
+		<!--
+		提取文件版本号
+		-->
+		<echo message="version def file = ${bh.version.def}" />
+		
+		<loadfile file="${bh.version.def}" property="versionfile" />
+		<echo message="parsing version file..." />
+		<regex pattern="#define ${bh.version.file.major}( )+(?'BH5000_FILE_MAJOR_VERSION'\d+)" input="${versionfile}" />
+		<!--echo message="${bh.version.file.major} = ${BH5000_FILE_MAJOR_VERSION}" /-->
+		<regex pattern="#define ${bh.version.file.minor}( )+(?'BH5000_FILE_MINOR_VERSION'\d+)" input="${versionfile}" />
+		<!--echo message="${bh.version.file.minor} = ${BH5000_FILE_MINOR_VERSION}" /-->
+		<regex pattern="#define ${bh.version.file.micro}( )+(?'BH5000_FILE_MICRO_VERSION'\d+)" input="${versionfile}" />
+		<!--echo message="${bh.version.file.micro} = ${BH5000_FILE_MICRO_VERSION}" /-->
+	</target>
+
+	<target name="fetch_product_version">
+		<!--
+		提取产品版本号
+		-->
+		<echo message="version def file = ${bh.version.def}" />
+		
+		<loadfile file="${bh.version.def}" property="versionfile" />
+		<regex pattern="#define ${bh.version.product.major}( )+(?'BH5000_PRODUCT_MAJOR_VERSION'\d+)" input="${versionfile}" />
+		<echo message="${bh.version.product.major} = ${BH5000_PRODUCT_MAJOR_VERSION}" />
+		<regex pattern="#define ${bh.version.product.minor}( )+(?'BH5000_PRODUCT_MINOR_VERSION'\d+)" input="${versionfile}" />
+		<echo message="${bh.version.product.minor} = ${BH5000_PRODUCT_MINOR_VERSION}" />
+		<regex pattern="#define ${bh.version.product.micro}( )+(?'BH5000_PRODUCT_MICRO_VERSION'\d+)" input="${versionfile}" />
+		<echo message="${bh.version.product.micro} = ${BH5000_PRODUCT_MICRO_VERSION}" />
+		<regex pattern="#define ${bh.version.product.package}( )+(?'BH5000_PRODUCT_PACKAGE_VERSION'\d+)" input="${versionfile}" />
+		<echo message="${bh.version.product.package} = ${BH5000_PRODUCT_PACKAGE_VERSION}" />	
+	</target>
+
+
+	<target name="export" depends="fetch_product_version">
+		<copy todir="${bh.it.binaries.dir}" overwrite="true" verbose="true" flatten="true">
+			<fileset  refid="bh.export.binaries" />
+		</copy>
+		
+		<copy todir="${bh.it.changelog.dir}" overwrite="true" verbose="true" flatten="true">
+			<fileset  refid="bh.export.changelog" />
+		</copy>
+		
+		<copy todir="${bh.it.pdb.dir}" overwrite="true" verbose="true" flatten="true">
+			<fileset  refid="bh.export.pdb" />
+		</copy>
+	</target>
+	
+	
+	<target name="upload" depends="fetch_product_version">
+		<property name="upload_version" value="${BH5000_PRODUCT_MAJOR_VERSION}.${BH5000_PRODUCT_MINOR_VERSION}.${BH5000_PRODUCT_MICRO_VERSION}.${BH5000_PRODUCT_PACKAGE_VERSION}" />
+		
+		<!--
+		使用Upload目录下的文件提交
+		-->		
+		<property name="export_dir" value="${bh.export.dir}/${export_version}/${bh.export.name}" />
+		<if test="${directory::exists(export_dir)}">
+			<echo message="Warning: directory ${export_dir} already exist!" level="Warning" verbose="${bh.verbose}" />
+		</if>
+				
+		<!--
+		上传至4#服务器
+		-->
+		<exec program="svn" workingdir="." verbose="${bh.verbose}">
+			<arg value="import" />
+			<arg value="${export_dir}" />
+			<arg value="http://192.168.1.4/svn/BH5000/Products/测试/${upload_version}/Server" />
+			<arg value="-m" />
+			<arg value="发布中间件${upload_version}测试版" />
+		</exec>
+	</target>	
+</project>

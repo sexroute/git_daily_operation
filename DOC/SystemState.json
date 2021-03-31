@@ -1,0 +1,140 @@
+{
+   "BasicInfo" : {                                                      //基本信息模块
+      "ConfigInfo" : {                                                  //配置信息
+         "AlarmConfig" : 3,                                             //报警设置，0表示未设置，3表示设置为3秒          
+         "ConnectDataBase" : "DQCenter",                                //连接的数据库
+         "DataSaveConfig" : 3,                                          //保存数据设置，0表示未设置，3表示设置为3秒             
+         "DataSynConfig" : 3,                                           //同步数据设置，0表示未设置，3表示设置为3秒
+         "SvrType" : 0                                                  //中间件服务器类别，0表示装置级，1表示中心级
+      },
+      "SoftVersion" : {                                                 //软件版本信息
+         "Config" : {                                                   //组态软件版本及位置信息
+            "Config.exe" : "3.5.0",                                     
+            "POSITION" : "E:\\Project\\lib\\Config.exe"
+         },
+         "HandleDataAssisant" : {                                       //处理助手版本及位置信息
+            "HandleDataAssisant.exe" : "3.5.0",
+            "POSITION" : "E:\\Project\\lib\\HandleDataAssisant.exe"
+         },
+         "MiddleWare" : {                                               //中间件模块版本及位置信息    
+            "POSITION" : "E:\\Project\\lib\\S_SystemSvr.dll",
+            "POSITION1" : "E:\\Project\\lib\\S_OnlineSvr.dll",
+            "POSITION2" : "E:\\Project\\lib\\S_OfflineSvr.dll",
+            "S_OfflineSvr.dll" : "3.5.0",
+            "S_OnlineSvr.dll" : "3.5.0",
+            "S_SystemSvr.dll" : "3.5.0"
+         },
+         "SendToCenter" : {                                             //同步助手版本及位置信息
+            "SendToCenter.exe" : "3.5.0",
+            "POSITION" : "E:\\Project\\lib\\SendToCenter.exe"
+         }
+      },
+      "StatisticInfo" : {                                               //数据库公司，设备，测点统计
+         "ChannelNum" : 20,
+         "CompanyNum" : 1,
+         "PlantNum" : 1
+      }
+   },
+   "DBInfo" : {                                                         //数据库信息模块
+      "DBStoringInfo" : {                                               //数据库所在磁盘还能保存数据时间
+         "AlarmDataSavingTime" : 17.8,                                  //保存报警数据天数                                 
+         "DataSavingTime" : 13.2,                                       //保存报警和趋势数据天数
+         "TrendDataSavingTime" : 15.6                                   //保存趋势数据天数
+      },
+      "DiskInfo" : {                                                    //磁盘空间信息
+         "DBNum" : 3,                                                   //数据库总数
+         "MainDB" : {                                                   //主库
+            "DBDataFileName" : "DQCenter_Data.MDF",                     //主库数据文件名
+            "DBDataFileSize" : 2.3,                                     //主库数据文件大小，单位为GB
+            "DBLogFileName" : "DQCenter_Data.LDF",                      //主库日志文件名
+            "DBLogFileSize" : 1.0,                                      //主库日志文件大小，单位为GB
+            "DBName" : "DQCenter",                                      //主数据库名
+            "DBType" : 0,                                               //数据库类型，0表示主库，1表示分库
+            "LeftDiskSpace" : 30,                                       //数据库所在磁盘剩余空间，单位为GB
+            "LeftDiskSpaceRate" : 0.33,                                 //数据库所在磁盘剩余空间比
+            "TheFastIncTableName" : "Channel",                          //前一天增长最快的表
+            "TotalDiskSpace" : 90                                       //数据库所在磁盘总空间                
+         },
+         "SubDB1" : {                                                   //分库  
+            "DBDataFileName" : "DQ3102J_Data.MDF",                      //分库主数据文件
+            "DBDataFileName1" : "DQ3102J_Data.NDF",                     //分库分数据文件
+            "DBDataFileSize" : 2,                                       //主数据文件大小，单位为GB
+            "DBDataFileSize1" : 1,                                      //分数据文件大小，单位为GB
+            "DBLogFileName" : "DQ3102J_Log.LDF",                        //分库日志文件
+            "DBLogFileSize" : 1,                                        //日志文件大小
+            "DBName" : "DQ3102J",                                 //分库数据库名
+            "DBType" : 1,                                         //数据库类型，0表示主库，1表示分库
+            "LeftDiskSpace" : 30,                                       //数据库所在磁盘剩余空间
+            "LeftDiskSpaceRate" : 0.33,                                 //数据库所在磁盘剩余空间比
+            "TheFastIncTableName" : "Trend_Vibday_DQ3102J",             //本数据库前一天增长最快的表       
+            "TotalDiskSpace" : 90                                       //数据库所在磁盘总空间
+         },
+         "SubDB2" : {
+            "DBDataFileName" : "DQK103_Data.MDF",
+            "DBDataFileName1" : "DQK103_Data.NDF",
+            "DBDataFileSize" : 2,
+            "DBDataFileSize1" : 1,
+            "DBLogFileName" : "DQK103_Log.LDF",
+            "DBLogFileSize" : 1,
+            "DBName" : "DQK103",
+            "DBType" : 1,
+            "DiskTotalSpace" : 90,
+            "LeftDiskSpace" : 30,
+            "LeftDiskSpaceRate" : 0.33,
+            "TheFastIncTableName" : "Trend_VibHour_DQK103"
+         }
+      }
+   },
+   "MiddleWareState" : {                                                //中间件状态信息
+      "Exception" : {                                                   //异常记录
+         "DataException" : "正常",                                      //数据异常
+         "SvrException" : "07:46:17 (tc-8781f347d4a5)进入应用服务系统", //服务异常
+         "SvrException1" : "07:46:29 开始登录.[DQCenter]，07:46:30 登录成功",
+         "SvrException2" : "07:46:37 启动应用服务系统"
+      },
+      "MiddleWareConnectState" : 0,                                //中间件连接状态，0表示正常，1表示异常
+      "ReceivingDataState" : {                                     //接收数据状态
+      	 "Company" : "大庆石化",                                   //公司名                                  
+         "Factory" : "化肥厂",                                    //分厂名
+         
+         "Plant" : "3102j",                                       //设备名
+         "ProcData" : 0,                                          //中间件接收趋势数据，0表示正常，1表示异常
+         "VibData" : 0,                                           //中间件接收震动数据，0表示正常，1表示异常
+         "DynData" : 0,                                            //中间件接收动态数据，0表示正常，1表示异常
+         
+         "Plant1" : "k103",
+         "DynData1" : 0,
+         "VibData1" : 0,
+         "ProcData1" : 0
+      },
+      "SavingDataState" : {                                        //保存数据状态
+      	 "Company" : "大庆石化",
+         "Factory" : "化肥厂",
+         
+         "Plant" : "3102j",
+         "AlarmData" : 0,                                        //中间件保存报警数据，0表示正常，1表示异常         
+         "SudData" : 0,                                          //中间件保存开停车数据，0表示正常，1表示异常
+         "TrendData" : 0,                                        //中间件保存趋势数据，0表示正常，1表示异常
+         
+         "Plant1" : "k103",
+         "AlarmData1" : 0,
+         "TrendData1" : 0,
+         "SudData1" : 0
+      },
+      "SendingDataState" : {                                      //同步数据状态
+      	 "Company" : "大庆石化",
+         "Factory" : "化肥厂",
+         
+         "Plant" : "3102j",   
+         "AlarmData" : "正常",                                   //同步报警数据，直接记录正常或异常，异常同时记录异常ID
+         "SudData" : "正常",                                     //同步开停车数据，直接记录正常或异常，异常同时记录异常ID
+         "TrendData" : 0,                                        //同步趋势数据，0表示正常，1表示异常
+         
+         "Plant1" : "k103",
+         "AlarmData1" :0 "正常",
+         "TrendData1" : 0,
+         "SudData1" : "正常"
+      }
+   }
+}
+

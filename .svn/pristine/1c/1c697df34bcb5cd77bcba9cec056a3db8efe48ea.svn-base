@@ -1,0 +1,1 @@
+1、修改报警日志表的主键为：EVENT_ID,name；修改报警日志表的THESH_ID和THESH_ID_NEW为 THESHOLD_ID和THESHOLD_ID_NEW

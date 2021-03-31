@@ -1,0 +1,7 @@
+; S_OnlineSvr.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S_OnlineSvr"
+DESCRIPTION  'Apex Service DLL'
+
+EXPORTS
+    Service

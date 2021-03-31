@@ -1,0 +1,7 @@
+; S_OfflineSvr.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S_OfflineSvr"
+DESCRIPTION  'Apex Service DLL'
+
+EXPORTS
+    Service

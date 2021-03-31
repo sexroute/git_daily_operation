@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- ====================================================================== -->
+<!-- User Customized Configuration                                          -->
+<!-- ====================================================================== -->
+
+<target name="env">
+	<!-- Solution- -->
+	<property name="bh.solution" value=".\middleware.sln" />
+	
+	<property name="bh.it.root.dir" value="E:\BH5000_IT-4.2.x" />
+
+	<!-- Version Definition File -->
+	
+	<property name="bh.version.def" value="${bh.it.root.dir}\Common\version.h" />
+	<property name="bh.version.script" value="tools/version.sh" />
+
+	<!-- version pattern -->
+	<property name="bh.version.file.major" value="BH5000_MW_MAJOR_VERSION" />
+	<property name="bh.version.file.minor" value="BH5000_MW_MINOR_VERSION" />
+	<property name="bh.version.file.micro" value="BH5000_MW_MICRO_VERSION" />
+
+	<property name="bh.version.product.major" value="BH5000_MAJOR_VERSION" />
+	<property name="bh.version.product.minor" value="BH5000_MINOR_VERSION" />
+	<property name="bh.version.product.micro" value="BH5000_MICRO_VERSION" />
+	<property name="bh.version.product.package" value="BH5000_PACKAGE_VERSION" />
+
+	<!-- program resource files -->
+	<fileset id="bh.rcfiles">
+		<include name="*\*.rc" />
+	</fileset>
+
+	<!-- debug/release -->
+	<property name="bh.configuration" value="release" />
+
+	<!-- nant debug info -->
+	<property name="bh.verbose" value="false" />
+
+	<!-- environment -->
+	<property name="bh.release.exe.dir" value="bin_Release" />
+	<property name="bh.debug.exe.dir" value="bin" />
+	<property name="bh.exe.name" value="Config.exe" />
+	<property name="bh.cleanup" value="true" />
+	
+	<!-- SVN -->
+	<property name="bh.svn_trunk"    value="http://192.168.1.113:8080/svn/BH5000/MiddleWare/trunk" />
+	<property name="bh.svn_tags"     value="http://192.168.1.113:8080/svn/BH5000/MiddleWare/tags/product" />	
+
+	<!--
+	  bh.export.dir/${version}/bh.export.name
+	  -->
+	<property name="bh.it.changelog.dir" value="${bh.it.root.dir}\Release\Changelog\Server" />
+	<property name="bh.it.pdb.dir"  value="${bh.it.root.dir}\Release\pdb\Server" />	
+	<property name="bh.it.binaries.dir"  value="${bh.it.root.dir}\Release\Server" />	
+	  
+ 	<fileset id="bh.export.changelog" defaultexcludes="true" >
+		<include name="Changelog.txt" />
+	</fileset>
+		  
+ 	<fileset id="bh.export.pdb" defaultexcludes="true" >
+		<include name="Temp/*/Release/S_*.pdb" />
+	</fileset>
+		  
+ 	<fileset id="bh.export.binaries" defaultexcludes="true" >
+		<include name="Lib/S_*.dll" />
+		<include name="Lib/sigmath.dll" />
+		<include name="Lib/BHFilterEx.dll" />
+		<include name="Lib/Synopsis2Kb.dll" />
+		<include name="Lib/KDCommLib.dll" />
+	</fileset>
+</target>

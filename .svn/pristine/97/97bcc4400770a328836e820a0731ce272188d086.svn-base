@@ -1,0 +1,7 @@
+; S_SystemSvr.def : Declares the module parameters for the DLL.
+
+LIBRARY      "S_SystemSvr"
+DESCRIPTION  'Apex Service DLL'
+
+EXPORTS
+    Service
