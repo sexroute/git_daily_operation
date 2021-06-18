@@ -106,7 +106,8 @@ git config --global http.sslverify false
 ## git tag  
 git tag -a v1.4 -m "my version 1.4"  
 git push origin --tags  
-git tag -d  
+## delete local tag. 
+git tag -d  "tag_name"
   
 
 ## git save username and password
