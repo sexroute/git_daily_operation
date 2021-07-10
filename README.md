@@ -127,9 +127,9 @@ git reset --hard origin
 	url = git@github.com:joyent/node.git  
 #### 4.2 Now add the line fetch = +refs/pull/*/head:refs/remotes/origin/pr/* to this section. Obviously, change the github url to match your project's URL. It ends up looking like this:  
   [remote "origin"]  
-	fetch = +refs/heads/*:refs/remotes/origin/*  
+	fetch = +refs/heads/*:refs/remotes/origin/\*  
 	url = git@github.com:joyent/node.git  
-	fetch = +refs/pull/*/head:refs/remotes/origin/pr/\\*  
+	fetch = +refs/pull/*/head:refs/remotes/origin/pr/\*  
 #### 4.3 Now fetch all the pull requests:  
   $ git fetch origin  
     From github.com:joyent/node  
