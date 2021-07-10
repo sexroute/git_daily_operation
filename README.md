@@ -120,12 +120,12 @@ git config --system user.name "your email@example.com"
 git fetch origin  
 git reset --hard origin  
 
-##Checkout github pull requests locally
-#Locate the section for your github remote in the .git/config file. It looks like this:  
+## Checkout github pull requests locally
+# Locate the section for your github remote in the .git/config file. It looks like this:  
 [remote "origin"]
 	fetch = +refs/heads/*:refs/remotes/origin/*  
 	url = git@github.com:joyent/node.git  
-#Now add the line fetch = +refs/pull/*/head:refs/remotes/origin/pr/* to this section. Obviously, change the github url to match your project's URL. It ends up looking like this:  
+# Now add the line fetch = +refs/pull/*/head:refs/remotes/origin/pr/* to this section. Obviously, change the github url to match your project's URL. It ends up looking like this:  
 [remote "origin"]  
 	fetch = +refs/heads/*:refs/remotes/origin/*  
 	url = git@github.com:joyent/node.git  
