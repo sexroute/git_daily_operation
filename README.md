@@ -92,6 +92,8 @@ git lfs track "\*.rar"
 git lfs track "\*.msi"  
 git lfs track "\*.lib"  
 git lfs track "\*.dat"  
+git lfs track "\*.gz"  
+git lfs track "\*.tar"  
 git add .gitattributes  
 git commit -m "lfs" -a  
 git push  
