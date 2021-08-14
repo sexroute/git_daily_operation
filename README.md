@@ -121,6 +121,11 @@ git config --global credential.helper store
 if prompted " fatal: $HOME not set"  
 git config --system user.email "your name here"  
 git config --system user.name "your email@example.com"  
+	
+##git clear saved username and password
+git config --local credential.helper ''  
+git pull  
+
 
 ## git reset like remote original/master (depend on the branch name)
 git fetch origin  
