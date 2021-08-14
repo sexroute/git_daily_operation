@@ -122,7 +122,7 @@ if prompted " fatal: $HOME not set"
 git config --system user.email "your name here"  
 git config --system user.name "your email@example.com"  
 	
-##git clear saved username and password
+##git clear saved username and password. 
 git config --local credential.helper ''  
 git pull  
 
