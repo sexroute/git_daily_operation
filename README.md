@@ -123,9 +123,10 @@ git config --system user.email "your name here"
 git config --system user.name "your email@example.com"  
 	
 ## git clear saved username and password. 
-git config --local credential.helper ''  
+git config --system --unset credential.helper   
 git pull  
-git config --global credential.helper cache. 
+git config --local credential.helper cache. 
+git pull. 
 
 
 ## git reset like remote original/master (depend on the branch name)
