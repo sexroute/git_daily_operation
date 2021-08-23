@@ -125,9 +125,11 @@ git config --system user.name "your email@example.com"
 ## git clear saved username and password. 
 git config --system --unset credential.helper   
 git config --global --unset credential.helper  
-git config --unset credential.helper. 
+git config --unset credential.helper  
 git pull  
 git config --local credential.helper cache  
+git config --system credential.helper cache  
+git config --global credential.helper cache  
 git pull. 
 
 
