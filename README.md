@@ -100,6 +100,7 @@ git lfs track "\*.csv"
 git lfs track "\*.txt"  
 git lfs track "\*.png" 
 git lfs track "\*.jpeg"	
+git lfs track "\*.jpg"
 git add .gitattributes  
 git commit -m "lfs" -a  
 git push  
