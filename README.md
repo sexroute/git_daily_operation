@@ -70,6 +70,8 @@ If you are prompted for **"bare"** related messages, commit to the local source 
 local repository directory>**git config --bool core.bare true**   
 go to he clone directory and exec push again  
 cloned mirror directory>**git push**  
+	
+git filter-branch --tree-filter 'rm -rf nft_analyze/0x60e4d786628fea6478f785a6d7e704777c86a7c6/0x60e4d786628fea6478f785a6d7e704777c86a7c6_assets.json' HEAD. 
 
 f. If it is a local library, you need to restore the local library's BARE no-commit mode  
 local repository directory>**git config --bool core.bare false**  
