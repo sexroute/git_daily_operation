@@ -168,11 +168,11 @@ git reset --hard origin
   Switched to a new branch 'pr/999'  
   
 ### 4.5 clone use ssh   
-1. gen ssh key   
-ssh-keygen -o -t rsa -C "xxx@github.com"   
-Enter file in which to save the key (C:\Users\xxx/.ssh/id_rsa): C:\Users\xxx/.ssh/xxx_rsa   
-2.clone with specified ssh key   
-ssh-agent $(ssh-add C:\Users\xxx/.ssh/xxx_rsa; git clone git@github.com:user/project.git)   
+	1. gen ssh key   
+	ssh-keygen -o -t rsa -C "xxx@github.com"   
+	Enter file in which to save the key (C:\Users\xxx/.ssh/id_rsa): C:\Users\xxx/.ssh/xxx_rsa  
+	2.clone with specified ssh key   
+	ssh-agent $(ssh-add C:\Users\xxx/.ssh/xxx_rsa; git clone git@github.com:user/project.git)   
 
 
 
