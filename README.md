@@ -172,6 +172,7 @@ git reset --hard origin
 	ssh-keygen -o -t rsa -C "xxx@github.com"   
 	Enter file in which to save the key (C:\Users\xxx/.ssh/id_rsa): C:\Users\xxx/.ssh/xxx_rsa  
 	2.clone with specified ssh key   
+	eval `ssh-agent -s`   
 	ssh-agent $(ssh-add C:\Users\xxx/.ssh/xxx_rsa; git clone git@github.com:user/project.git)   
 
 
