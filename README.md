@@ -167,7 +167,7 @@ git reset --hard origin
   Branch pr/999 set up to track remote branch pr/999 from origin.  
   Switched to a new branch 'pr/999'  
   
-### 5 clone use ssh   
+## 5 clone use ssh   
 	1. gen ssh key   
 	ssh-keygen -o -t rsa -C "xxx@github.com"   
 	Enter file in which to save the key (C:\Users\xxx/.ssh/id_rsa): C:\Users\xxx/.ssh/xxx_rsa  
