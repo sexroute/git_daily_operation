@@ -174,6 +174,9 @@ git reset --hard origin
 	2.clone with specified ssh key   
 	eval `ssh-agent -s`   
 	ssh-agent $(ssh-add C:\Users\xxx/.ssh/xxx_rsa; git clone git@github.com:user/project.git)   
+	3.change repo ssh key 
+	git config core.sshCommand "ssh -i ~/.ssh/xxx_rsa -F /dev/null"
+	
 
 
 
